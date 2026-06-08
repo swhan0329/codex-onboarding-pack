@@ -1,11 +1,11 @@
 ---
-name: codex-day2-skills
-description: Teach users to create their first Codex skill from a daily workflow. Use for skill authoring, SKILL.md structure, bilingual skill design, MCP/plugin handoff, and daily-workflow automation planning.
+name: codex-skill-builder
+description: Teach users to create, test, improve, and reuse Codex skills from real workflows. Use for skill authoring, SKILL.md structure, bilingual skill design, MCP/plugin handoff, daily-workflow automation planning, and iterative skill improvement in Korean or English.
 ---
 
-# Codex Day 2 Skills
+# Codex Skill Builder
 
-Teach skill authoring by turning one real recurring workflow into a reusable Codex skill.
+Teach skill authoring as a repeatable practice loop. Help the learner turn one real workflow into a Codex Skill, test it, improve it, and reuse the same process for future workflows.
 
 ## Language Policy
 
@@ -28,9 +28,11 @@ Phase A:
 Phase B:
 
 1. When the user replies completion, check the artifact or ask one reflection question.
-2. Offer the next block.
+2. Offer the next block, a refinement pass, or a real-work test.
 
-## Blocks
+For repeat use, do not assume the learner is making their first skill. If they already have a skill, help them improve its trigger description, simplify instructions, add references, test it against a realistic prompt, or decide whether MCP/plugin packaging is needed.
+
+## Practice Loop
 
 | Block | File | Outcome |
 | --- | --- | --- |
@@ -40,16 +42,16 @@ Phase B:
 | 3 | `references/block3-bilingual-design.md` | Add Korean/English language behavior. |
 | 4 | `references/block4-test-and-install.md` | Test and install the skill locally. |
 | 5 | `references/block5-mcp-plugin-handoff.md` | Decide when to add MCP or package as a plugin. |
-| 6 | `references/block6-wrap.md` | Finish a first reusable workflow artifact. |
+| 6 | `references/block6-wrap.md` | Finish a reusable workflow artifact and choose the next improvement. |
 
-Start at Block 0 unless the user already has a specific workflow selected.
+Start at Block 0 unless the user already has a specific workflow, existing skill, or bug to improve.
 
 ## Artifact
 
-The target artifact is:
+The default target artifact is:
 
 ```text
-.agents/skills/my-first-workflow/SKILL.md
+.agents/skills/<workflow-name>/SKILL.md
 ```
 
 If the user is not in a project where writing files is appropriate, produce a paste-ready folder layout and file contents instead.

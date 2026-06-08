@@ -8,34 +8,40 @@
 
 먼저 아래가 준비되어 있는지 확인합니다.
 
-- Codex가 설치되어 있어야 합니다.
-- GitHub에서 이 저장소를 clone할 수 있어야 합니다.
-- 터미널에서 `git` 명령을 사용할 수 있어야 합니다.
+- Codex App이 설치되어 있고 로그인할 수 있어야 합니다.
+- GitHub에서 이 저장소를 clone하거나 다운로드할 수 있어야 합니다.
+- 터미널에서 `git` 명령을 사용할 수 있으면 좋지만, 필수는 아닙니다.
 
-터미널에서 확인합니다.
+Codex CLI는 선택 사항입니다. 이 가이드는 먼저 Codex App으로 시작합니다.
+
+터미널을 사용할 수 있다면 아래를 확인합니다.
 
 ```bash
 git --version
 ```
 
-Codex가 CLI로 설치되어 있다면 아래도 확인합니다.
+Codex CLI도 함께 쓰고 싶다면 아래를 확인합니다.
 
 ```bash
 codex --version
 ```
 
-`codex --version`이 동작하지 않아도 Codex Desktop app을 사용 중이라면 괜찮습니다. 이 경우 Codex app에서 프로젝트 폴더를 열어 진행하면 됩니다.
+`codex --version`이 동작하지 않아도 괜찮습니다. Codex App에서 프로젝트 폴더를 열어 진행할 수 있습니다.
 
-## 1. 저장소 clone
+## 1. 저장소를 내 컴퓨터로 가져오기
 
-원하는 작업 폴더로 이동한 뒤 저장소를 clone합니다.
+Codex App으로 시작하더라도 먼저 이 저장소가 내 컴퓨터의 local folder로 있어야 합니다.
+
+터미널이 편하다면 원하는 작업 폴더로 이동한 뒤 저장소를 clone합니다.
 
 ```bash
 git clone https://github.com/swhan0329/codex-onboarding-pack.git
 cd codex-onboarding-pack
 ```
 
-폴더 안에 스킬이 있는지 확인합니다.
+터미널이 익숙하지 않다면 GitHub 페이지에서 **Code** 버튼을 누른 뒤 **Download ZIP**으로 받아도 됩니다. 압축을 풀면 `codex-onboarding-pack` 폴더가 생깁니다.
+
+가능하다면 폴더 안에 스킬이 있는지 확인합니다.
 
 ```bash
 find .agents/skills -maxdepth 2 -name SKILL.md -print
@@ -45,29 +51,39 @@ find .agents/skills -maxdepth 2 -name SKILL.md -print
 
 ```text
 .agents/skills/codex-camp-start/SKILL.md
-.agents/skills/codex-day1-core/SKILL.md
-.agents/skills/codex-day2-skills/SKILL.md
+.agents/skills/codex-core-coach/SKILL.md
+.agents/skills/codex-skill-builder/SKILL.md
 ```
 
-## 2. Codex에서 repo 열기
+Finder나 파일 탐색기로 확인한다면 아래 파일들이 있는지만 보면 됩니다.
 
-### Codex CLI를 쓰는 경우
-
-저장소 root에서 실행합니다.
-
-```bash
-codex
+```text
+codex-onboarding-pack/
+  .agents/
+    skills/
+      codex-camp-start/
+        SKILL.md
+      codex-core-coach/
+        SKILL.md
+      codex-skill-builder/
+        SKILL.md
 ```
 
-### Codex Desktop app을 쓰는 경우
+## 2. Codex App에서 repo 열기 (추천)
 
-Codex app에서 `codex-onboarding-pack` 폴더를 프로젝트로 엽니다.
+먼저 Codex App으로 시작합니다.
 
-중요한 점은 Codex가 이 저장소의 root를 보고 있어야 한다는 것입니다. 그래야 `.agents/skills` 안의 스킬을 찾을 수 있습니다.
+1. Codex App을 엽니다.
+2. ChatGPT 계정으로 로그인합니다.
+3. 새 project 또는 folder 열기 흐름에서 `codex-onboarding-pack` 폴더를 선택합니다.
+4. 프로젝트가 열리면 새 thread를 시작합니다.
+5. thread가 이 저장소 root를 보고 있는지 확인합니다.
+
+중요한 점은 Codex App이 `codex-onboarding-pack` 폴더 전체를 프로젝트로 보고 있어야 한다는 것입니다. 그래야 `.agents/skills` 안의 스킬을 찾을 수 있습니다.
 
 ## 3. 첫 스킬 호출
 
-Codex에 아래처럼 입력합니다.
+새 thread에서 아래처럼 입력합니다.
 
 ```text
 $codex-camp-start
@@ -81,7 +97,8 @@ Codex 온보딩 시작해줘.
 
 정상이라면 Codex가 다음 중 어떤 방식으로 시작할지 물어봅니다.
 
-- 빠른 체험
+- Start here
+- Explain simply
 - Daily workflow
 - Skill builder
 - Facilitator mode
@@ -89,27 +106,54 @@ Codex 온보딩 시작해줘.
 처음이라면 이렇게 답하세요.
 
 ```text
-빠른 체험으로 시작할게.
+Start here로 시작할게.
 ```
 
-## 4. Day 1: Codex 핵심 지도 만들기
+## 3-1. Codex CLI로 여는 방법 (선택)
 
-Day 1은 `$codex-day1-core` 스킬로 진행됩니다.
+터미널에서 진행하고 싶다면 저장소 root에서 실행합니다.
+
+```bash
+codex
+```
+
+Codex CLI가 열리면 같은 방식으로 시작합니다.
+
+```text
+$codex-camp-start
+```
+
+## 4. 기본기와 용어를 쉽게 배우기
+
+기본기 설명은 `$codex-core-coach` 스킬로 진행됩니다. 이 스킬은 한 번 듣고 끝내는 강의가 아니라, Codex를 쓰다가 막힐 때 다시 부르는 코치입니다.
 
 직접 호출하고 싶다면 이렇게 입력합니다.
 
 ```text
-$codex-day1-core
+$codex-core-coach
 ```
 
-Day 1에서 배우는 내용은 다음과 같습니다.
+이 스킬로 배울 수 있는 내용은 다음과 같습니다.
 
 - Codex app, CLI, IDE extension, web/cloud의 차이
 - `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md`의 역할
 - Codex에게 좋은 요청을 주는 법
 - 내 daily 업무 중 Codex로 바꿀 수 있는 흐름 찾기
+- 개발 용어나 Codex 용어를 쉬운 예시로 풀어보기
 
-Codex가 각 블록마다 설명한 뒤 멈추면, 직접 해본 다음 이렇게 답합니다.
+예를 들어 이렇게 물어볼 수 있습니다.
+
+```text
+MCP가 뭔지 개발자가 아닌 사람도 이해할 수 있게 설명해줘.
+```
+
+또는
+
+```text
+지금 내가 Codex App에서 뭘 먼저 해보면 좋을지 한 단계씩 알려줘.
+```
+
+순차 학습을 선택한 경우 Codex가 각 모듈마다 설명한 뒤 멈춥니다. 직접 해본 다음 이렇게 답합니다.
 
 ```text
 완료
@@ -121,19 +165,19 @@ Codex가 각 블록마다 설명한 뒤 멈추면, 직접 해본 다음 이렇�
 다음
 ```
 
-Day 1의 목표 결과물은 아래 중 하나입니다.
+목표 결과물은 아래 중 하나입니다.
 
-- 채팅 안에 정리된 `Codex Onboarding Map`
-- 파일로 저장된 `CODEX_ONBOARDING_MAP.md`
+- 채팅 안에 정리된 `Codex Working Notes`
+- 파일로 저장된 `CODEX_WORKING_NOTES.md`
 
-## 5. Day 2: 내 첫 Skill 만들기
+## 5. 반복 업무를 Skill로 만들거나 개선하기
 
-Day 2는 반복 업무 하나를 Codex Skill로 바꾸는 과정입니다.
+반복 업무를 Codex Skill로 바꾸는 과정은 `$codex-skill-builder`가 담당합니다. 처음 만들 때도 쓰고, 이미 만든 스킬을 고칠 때도 다시 쓸 수 있습니다.
 
 호출합니다.
 
 ```text
-$codex-day2-skills
+$codex-skill-builder
 ```
 
 처음에는 아래처럼 답해도 좋습니다.
@@ -142,13 +186,19 @@ $codex-day2-skills
 내가 매일 반복하는 업무를 하나 골라서 첫 스킬로 만들고 싶어.
 ```
 
-Day 2에서 만드는 목표 파일은 다음과 같습니다.
+이미 스킬이 있다면 이렇게 요청할 수 있습니다.
 
 ```text
-.agents/skills/my-first-workflow/SKILL.md
+이 Skill이 언제 호출되어야 하는지 description을 더 잘 다듬어줘.
 ```
 
-처음 만들 스킬 주제 예시는 다음과 같습니다.
+만드는 목표 파일은 다음과 같습니다.
+
+```text
+.agents/skills/<workflow-name>/SKILL.md
+```
+
+스킬 주제 예시는 다음과 같습니다.
 
 - 매일 아침 메일 triage
 - 회의 전 agenda 정리
@@ -198,7 +248,7 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 
 ### 스킬이 안 보여요
 
-1. Codex를 저장소 root에서 열었는지 확인합니다.
+1. Codex App에서 `codex-onboarding-pack` 폴더를 프로젝트로 열었는지 확인합니다.
 2. `.agents/skills` 아래에 `SKILL.md` 파일들이 있는지 확인합니다.
 3. Codex를 재시작합니다.
 
@@ -224,14 +274,14 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 
 처음이라면 이 순서로 진행하세요.
 
-1. `git clone`
-2. `codex` 실행 또는 Codex app에서 repo 열기
-3. `$codex-camp-start`
-4. 빠른 체험 선택
-5. `$codex-day1-core` 완료
-6. daily 업무 후보 하나 고르기
-7. `$codex-day2-skills`
-8. `.agents/skills/my-first-workflow/SKILL.md` 초안 만들기
+1. 저장소 clone 또는 Download ZIP
+2. Codex App 실행
+3. Codex App에서 `codex-onboarding-pack` 폴더 열기
+4. `$codex-camp-start`
+5. `Start here` 선택
+6. 모르는 용어나 기본 개념은 `$codex-core-coach`로 질문하기
+7. daily 업무 후보 하나 고르기
+8. 재사용하고 싶은 흐름은 `$codex-skill-builder`로 Skill 초안 만들기
 9. 실제 업무 하나에 테스트해보기
 10. 필요한 경우 MCP 또는 Plugin으로 확장하기
 

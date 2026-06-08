@@ -7,17 +7,45 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 이 팩은 세 개의 스킬로 시작합니다.
 
-- `$codex-camp-start`: 온보딩 시작점입니다. 사용자의 언어와 학습 트랙을 정합니다.
-- `$codex-day1-core`: Codex 핵심 기능 지도와 daily workflow 적용 방향을 배웁니다.
-- `$codex-day2-skills`: 반복 업무를 첫 Codex Skill로 바꾸는 실습을 진행합니다.
+- `$codex-camp-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
+- `$codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명합니다.
+- `$codex-skill-builder`: 업무 흐름을 Codex Skill로 만들고, 테스트하고, 계속 개선합니다.
 
-커리큘럼은 한국어와 영어를 모두 지원합니다. 사용자가 한국어로 말하면 한국어로, 영어로 말하면 영어로 진행하며, `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md` 같은 공식 제품 용어는 영어 표기를 함께 유지합니다.
+이 학습 흐름은 한국어와 영어를 모두 지원합니다. 사용자가 한국어로 말하면 한국어로, 영어로 말하면 영어로 진행하며, `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md` 같은 공식 제품 용어는 영어 표기를 함께 유지합니다.
+
+## Codex App으로 시작하기 (추천)
+
+1. 이 저장소를 clone하거나 local folder로 다운로드합니다.
+2. Codex App을 열고 로그인합니다.
+3. `codex-onboarding-pack` 폴더를 프로젝트/workspace로 엽니다.
+4. 그 프로젝트 안에서 새 thread를 시작합니다.
+5. 아래처럼 요청합니다.
+
+```text
+$codex-camp-start
+```
+
+Codex가 `.agents/skills` 아래의 repo-local skill을 찾으면 온보딩 흐름이 시작됩니다.
 
 ## 설치
 
-### Repo-local 사용
+### Codex App에서 repo-local 사용
 
-이 저장소를 clone한 뒤 repo root에서 Codex를 실행합니다.
+이 저장소를 clone한 뒤 Codex App에서 폴더를 엽니다.
+
+```bash
+git clone https://github.com/swhan0329/codex-onboarding-pack.git
+```
+
+Codex App에서 clone된 `codex-onboarding-pack` 폴더를 열고, 새 thread에서 이렇게 요청합니다.
+
+```text
+$codex-camp-start
+```
+
+### Codex CLI에서 repo-local 사용
+
+터미널을 선호한다면 repo root에서 Codex CLI를 실행합니다.
 
 ```bash
 codex
@@ -61,11 +89,12 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 $codex-camp-start
 ```
 
-그다음 원하는 트랙을 고릅니다.
+그다음 지금 필요한 흐름을 고릅니다.
 
-- 빠른 체험: Codex 핵심 기능 지도를 짧게 훑습니다.
+- Start here: Codex App에서 시작하고 기본 흐름을 익힙니다.
+- Explain simply: Codex 용어나 개발 용어를 쉽게 설명받습니다.
 - Daily workflow: 실제 반복 업무 하나를 Codex workflow로 바꿉니다.
-- Skill builder: 내 첫 Codex Skill을 만듭니다.
+- Skill builder: 재사용 가능한 Codex Skill을 만들거나 개선합니다.
 - Facilitator mode: 수업이나 워크샵 진행안으로 사용합니다.
 
 ## 무엇을 배우나
@@ -85,11 +114,11 @@ $codex-camp-start
 
 학습자는 다음 중 하나 이상의 작업물을 남기게 됩니다.
 
-- `CODEX_ONBOARDING_MAP.md`
+- `CODEX_WORKING_NOTES.md`
 - daily workflow 후보 목록
-- `.agents/skills/my-first-workflow/SKILL.md`
+- `.agents/skills/<workflow-name>/SKILL.md`
 - 본인 업무에 맞춘 Skill 초안
 
 ## 기준 문서
 
-커리큘럼은 Codex 공식 문서의 Skills, Plugins, MCP, Subagents, Hooks, app features, workflows 내용을 기준으로 구성했습니다. 각 스킬의 reference 파일에는 Codex가 필요할 때 최신 공식 문서를 다시 확인할 수 있도록 링크를 포함했습니다.
+이 학습 흐름은 Codex 공식 문서의 Skills, Plugins, MCP, Subagents, Hooks, app features, workflows 내용을 기준으로 구성했습니다. 각 스킬의 reference 파일에는 Codex가 필요할 때 최신 공식 문서를 다시 확인할 수 있도록 링크를 포함했습니다.

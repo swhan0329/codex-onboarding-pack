@@ -18,20 +18,20 @@ After creating a skill, test it with realistic trigger prompts. If the descripti
 
 Test with three prompts:
 
-1. A direct explicit call: `$my-first-workflow`
+1. A direct explicit call: `$<workflow-name>`
 2. A natural-language trigger that should invoke it.
 3. A nearby task that should not invoke it.
 
 If the skill is repo-local, place it under:
 
 ```text
-.agents/skills/my-first-workflow/SKILL.md
+.agents/skills/<workflow-name>/SKILL.md
 ```
 
 If the learner wants it everywhere on the machine, place it under:
 
 ```text
-~/.agents/skills/my-first-workflow/SKILL.md
+~/.agents/skills/<workflow-name>/SKILL.md
 ```
 
 Restart Codex if the new skill does not appear.

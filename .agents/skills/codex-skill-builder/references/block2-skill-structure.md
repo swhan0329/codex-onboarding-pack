@@ -19,7 +19,7 @@ The smallest Codex skill is a folder with `SKILL.md`. Its frontmatter must inclu
 Create this minimal structure:
 
 ```text
-.agents/skills/my-first-workflow/
+.agents/skills/<workflow-name>/
 └── SKILL.md
 ```
 
@@ -27,11 +27,11 @@ Starter `SKILL.md`:
 
 ```md
 ---
-name: my-first-workflow
+name: <workflow-name>
 description: Use when the user asks to run or improve [specific repeated task]. Trigger on [keywords]. Do not use for unrelated work.
 ---
 
-# My First Workflow
+# <Workflow Name>
 
 ## Inputs
 

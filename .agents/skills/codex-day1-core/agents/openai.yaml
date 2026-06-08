@@ -1,5 +1,0 @@
-interface:
-  display_name: "Codex Day 1 Core"
-  short_description: "Learn Codex core workflows"
-  default_prompt: "Use $codex-day1-core to learn the core Codex workflow map."
-  brand_color: "#0F766E"

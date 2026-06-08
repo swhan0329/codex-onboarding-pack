@@ -23,7 +23,7 @@ Ask the learner to list three recurring tasks using this table:
 | Task | Input source | Output | Frequency | Human review needed? | Best Codex surface |
 | --- | --- | --- | --- | --- | --- |
 
-Then choose one task for Day 2.
+Then choose one task to test with Codex. If it should become reusable, route to `$codex-skill-builder`.
 
 ## CHECK
 
