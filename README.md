@@ -59,6 +59,21 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
+Verify the install:
+
+```bash
+codex plugin list --marketplace codex-onboarding-pack
+```
+
+You should see `codex-onboarding-pack@codex-onboarding-pack` with `installed, enabled` status.
+
+Update later:
+
+```bash
+codex plugin marketplace upgrade codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
+```
+
 Then open Codex, start a new thread, and ask:
 
 ```text

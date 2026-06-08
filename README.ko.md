@@ -59,6 +59,21 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
+설치 확인:
+
+```bash
+codex plugin list --marketplace codex-onboarding-pack
+```
+
+정상이라면 `codex-onboarding-pack@codex-onboarding-pack`가 `installed, enabled` 상태로 보입니다.
+
+업데이트:
+
+```bash
+codex plugin marketplace upgrade codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
+```
+
 그다음 Codex에서 새 스레드를 열고 시작합니다.
 
 ```text

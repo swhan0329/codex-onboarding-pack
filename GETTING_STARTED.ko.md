@@ -50,6 +50,26 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
+설치 확인은 아래 명령으로 합니다.
+
+```bash
+codex plugin list --marketplace codex-onboarding-pack
+```
+
+정상 출력 예시는 다음과 같습니다.
+
+```text
+PLUGIN                                       STATUS              VERSION  PATH
+codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.2    ...
+```
+
+나중에 최신 버전으로 업데이트하려면 아래처럼 실행합니다.
+
+```bash
+codex plugin marketplace upgrade codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
+```
+
 `/plugins`에서 직접 설치해도 되고, 위 두 번째 명령처럼 `codex plugin add`로 설치해도 됩니다.
 
 설치 후 새 thread에서 이렇게 시작합니다.
