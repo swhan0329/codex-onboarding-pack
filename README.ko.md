@@ -1,6 +1,7 @@
 # Codex Onboarding Pack
 
 [English README](README.md)
+| [Step-by-Step 시작 가이드](GETTING_STARTED.ko.md)
 
 Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물을 남기면서 익힐 수 있도록 만든 온보딩 스킬 팩입니다.
 
@@ -30,7 +31,7 @@ $codex-camp-start
 
 ### Plugin marketplace 사용
 
-이 저장소에는 최소 plugin manifest와 marketplace entry도 포함되어 있습니다. GitHub 계정에서 이 private repo에 접근할 수 있다면, Codex marketplace source로 추가할 수 있습니다.
+이 저장소에는 최소 plugin manifest와 marketplace entry도 포함되어 있습니다. GitHub에서 이 public repo를 clone할 수 있다면, Codex marketplace source로 추가할 수 있습니다.
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
