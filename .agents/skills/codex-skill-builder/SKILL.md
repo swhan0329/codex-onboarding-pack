@@ -30,7 +30,7 @@ Phase B:
 1. When the user replies completion, check the artifact or ask one reflection question.
 2. Recommend exactly one next step.
 3. Offer two short alternatives.
-4. If the next step depends on Codex basics, MCP, Plugin packaging, or daily workflow selection, route back to `$codex-core-coach` or the relevant block in this skill.
+4. If the next step depends on Codex basics, MCP, Plugin packaging, or daily workflow selection, route back to `codex-core-coach` or the relevant block in this skill.
 5. If the user replies `next`, `다음`, `continue`, or `계속` without choosing, continue with the recommended next step.
 
 For repeat use, do not assume the learner is making their first skill. If they already have a skill, help them improve its trigger description, simplify instructions, add references, test it against a realistic prompt, or decide whether MCP/plugin packaging is needed.

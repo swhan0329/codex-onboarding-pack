@@ -11,9 +11,9 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 이 팩은 세 개의 스킬로 시작합니다.
 
-- `$codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
-- `$codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명하고 다음 학습 단계를 추천합니다.
-- `$codex-skill-builder`: 업무 흐름을 Codex Skill로 만들고, 테스트하고, 계속 개선합니다.
+- `codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
+- `codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명하고 다음 학습 단계를 추천합니다.
+- `codex-skill-builder`: 업무 흐름을 Codex Skill로 만들고, 테스트하고, 계속 개선합니다.
 
 이 학습 흐름은 한국어와 영어를 모두 지원합니다. 사용자가 한국어로 말하면 한국어로, 영어로 말하면 영어로 진행하며, `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md` 같은 공식 제품 용어는 영어 표기를 함께 유지합니다.
 
@@ -34,17 +34,9 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-4. 새 thread에서 시작합니다.
+4. 새 thread에서 입력창에 `$`를 입력하고 `codex-start`를 검색해 선택합니다.
 
-```text
-@codex-onboarding-pack start onboarding
-```
-
-설치 후 시작 스킬을 직접 호출해도 됩니다.
-
-```text
-$codex-start
-```
+일부 Codex App 버전에서는 같은 시작점이 `Codex Start Coach`로 보일 수 있습니다. 그 항목을 선택해도 정상입니다.
 
 ## 설치
 
@@ -74,11 +66,7 @@ codex plugin marketplace upgrade codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-그다음 Codex에서 새 스레드를 열고 시작합니다.
-
-```text
-@codex-onboarding-pack start onboarding
-```
+그다음 Codex에서 새 스레드를 열고 입력창에 `$`를 입력한 뒤 `codex-start`를 선택합니다. 일부 버전에서는 `Codex Start Coach`로 보일 수 있습니다.
 
 ### Repo-local fallback
 
@@ -90,10 +78,10 @@ cd codex-onboarding-pack
 codex
 ```
 
-그다음 이렇게 요청합니다.
+그다음 입력창에 `$`를 입력하고 `codex-start`를 선택합니다. 직접 요청할 때는 이렇게 써도 됩니다.
 
 ```text
-$codex-start
+codex-start 스킬을 사용해서 온보딩을 시작해줘.
 ```
 
 ### 사용자 전체 설치
@@ -108,17 +96,7 @@ $codex-start
 
 ## 첫 실행
 
-Plugin 설치 후에는 이렇게 시작합니다.
-
-```text
-@codex-onboarding-pack start onboarding
-```
-
-또는 시작 스킬을 직접 호출합니다.
-
-```text
-$codex-start
-```
+Plugin 설치 후에는 새 thread에서 입력창에 `$`를 입력하고 `codex-start`를 선택합니다. 일부 버전에서는 `Codex Start Coach`로 보일 수 있습니다.
 
 그다음 지금 필요한 흐름을 고릅니다.
 

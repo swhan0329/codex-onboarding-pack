@@ -38,10 +38,10 @@ On invocation:
 
 When the user chooses:
 
-- Start from basics, feature map, or developer-term explanation -> invoke or route to `$codex-core-coach`.
-- Daily workflow -> route to `$codex-core-coach` module 4, then offer `$codex-skill-builder` if the workflow should become reusable.
-- Build or improve a skill -> route to `$codex-skill-builder`.
-- MCP, Plugin, Subagent, Hook, or AGENTS.md questions -> route to `$codex-core-coach` module 2 first, then offer `$codex-skill-builder` block 5 if the learner wants to package or connect a workflow.
+- Start from basics, feature map, or developer-term explanation -> invoke or route to `codex-core-coach`.
+- Daily workflow -> route to `codex-core-coach` module 4, then offer `codex-skill-builder` if the workflow should become reusable.
+- Build or improve a skill -> route to `codex-skill-builder`.
+- MCP, Plugin, Subagent, Hook, or AGENTS.md questions -> route to `codex-core-coach` module 2 first, then offer `codex-skill-builder` block 5 if the learner wants to package or connect a workflow.
 
 ## Keep-Going Protocol
 
@@ -77,11 +77,11 @@ Use this menu, translated into the active language:
 
 | Need | Best for | Next |
 | --- | --- | --- |
-| Start here | New users opening Codex App or a repo for the first time. | `$codex-core-coach` |
-| Explain simply | Users blocked by Codex or developer terms. | `$codex-core-coach` |
-| Daily workflow | People who want to apply Codex to recurring work. | `$codex-core-coach`, then possibly `$codex-skill-builder` |
-| Skill builder | People ready to create or improve a reusable skill. | `$codex-skill-builder` |
-| Extend Codex | People deciding whether they need MCP, Plugins, Subagents, Hooks, or AGENTS.md. | `$codex-core-coach`, then possibly `$codex-skill-builder` |
+| Start here | New users opening Codex App or a repo for the first time. | `codex-core-coach` |
+| Explain simply | Users blocked by Codex or developer terms. | `codex-core-coach` |
+| Daily workflow | People who want to apply Codex to recurring work. | `codex-core-coach`, then possibly `codex-skill-builder` |
+| Skill builder | People ready to create or improve a reusable skill. | `codex-skill-builder` |
+| Extend Codex | People deciding whether they need MCP, Plugins, Subagents, Hooks, or AGENTS.md. | `codex-core-coach`, then possibly `codex-skill-builder` |
 
 ## Output Style
 

@@ -71,9 +71,9 @@ Use these routes after each completion:
 | --- | --- |
 | Module 0 orientation | Module 1 surfaces, unless they already chose a daily workflow. |
 | Module 1 surfaces | Module 2 extension map. |
-| Module 2 extension map | Module 3 safe workflow, or `$codex-skill-builder` if they named a repeated workflow. |
+| Module 2 extension map | Module 3 safe workflow, or `codex-skill-builder` if they named a repeated workflow. |
 | Module 3 safe workflow | Module 4 daily work. |
-| Module 4 daily work | `$codex-skill-builder` when one workflow is worth reusing. |
+| Module 4 daily work | `codex-skill-builder` when one workflow is worth reusing. |
 | Module 5 wrap | Pick one real task to test, then improve the notes or build a skill. |
 
 Korean continuation shape:

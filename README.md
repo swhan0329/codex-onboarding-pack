@@ -11,9 +11,9 @@ Links: [Portfolio](https://swhan0329.github.io/) · [LinkedIn](https://www.linke
 
 This pack starts with three skills:
 
-- `$codex-start`: the bilingual always-on entry point.
-- `$codex-core-coach`: plain-language Codex basics, developer terms, daily workflow coaching, and recommended next steps.
-- `$codex-skill-builder`: create, test, improve, and reuse Codex skills.
+- `codex-start`: the bilingual always-on entry point.
+- `codex-core-coach`: plain-language Codex basics, developer terms, daily workflow coaching, and recommended next steps.
+- `codex-skill-builder`: create, test, improve, and reuse Codex skills.
 
 The learning flow supports Korean and English. Codex should answer in the user's dominant language, while keeping official product terms such as Skill, Plugin, MCP, Subagent, Hook, and AGENTS.md visible.
 
@@ -34,17 +34,9 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-4. Start a new thread and ask:
+4. Start a new thread, type `$` in the prompt box, search for `codex-start`, and select it.
 
-```text
-@codex-onboarding-pack start onboarding
-```
-
-You can also invoke the start skill directly after install:
-
-```text
-$codex-start
-```
+In some Codex App versions, the same entry may appear as `Codex Start Coach`. Select that entry if you see it.
 
 ## Install
 
@@ -74,11 +66,7 @@ codex plugin marketplace upgrade codex-onboarding-pack
 codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-Then open Codex, start a new thread, and ask:
-
-```text
-@codex-onboarding-pack start onboarding
-```
+Then open Codex, start a new thread, type `$`, and select `codex-start`. In some versions, it may appear as `Codex Start Coach`.
 
 ### Repo-local fallback
 
@@ -90,10 +78,10 @@ cd codex-onboarding-pack
 codex
 ```
 
-Then ask:
+Then type `$` and select `codex-start`. You can also ask in natural language:
 
 ```text
-$codex-start
+Use the codex-start skill to start onboarding.
 ```
 
 ### User-wide use
@@ -108,17 +96,7 @@ Restart Codex if the skills do not appear immediately.
 
 ## First Run
 
-After installing the plugin, start with:
-
-```text
-@codex-onboarding-pack start onboarding
-```
-
-Or invoke the start skill directly:
-
-```text
-$codex-start
-```
+After installing the plugin, start a new thread, type `$`, and select `codex-start`. In some versions, it may appear as `Codex Start Coach`.
 
 Then choose what you need right now:
 

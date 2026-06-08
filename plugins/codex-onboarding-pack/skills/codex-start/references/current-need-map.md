@@ -38,8 +38,8 @@ After each completed step, do not close the conversation. Recommend one next ste
 
 ## Routing
 
-- Start here -> `$codex-core-coach`
-- Explain simply -> `$codex-core-coach`
-- Daily workflow -> `$codex-core-coach`, then possibly `$codex-skill-builder`
-- Skill builder -> `$codex-skill-builder`
-- Extend Codex -> `$codex-core-coach` module 2, then possibly `$codex-skill-builder` block 5
+- Start here -> `codex-core-coach`
+- Explain simply -> `codex-core-coach`
+- Daily workflow -> `codex-core-coach`, then possibly `codex-skill-builder`
+- Skill builder -> `codex-skill-builder`
+- Extend Codex -> `codex-core-coach` module 2, then possibly `codex-skill-builder` block 5

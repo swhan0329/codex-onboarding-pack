@@ -1,5 +1,5 @@
 interface:
-  display_name: "Codex Core Coach"
-  short_description: "Explain Codex basics simply"
-  default_prompt: "Use $codex-core-coach to explain Codex basics and suggest one practical next step."
+  display_name: "codex-core-coach"
+  short_description: "Codex Core Coach: explain Codex basics simply"
+  default_prompt: "Use the codex-core-coach skill to explain Codex basics and suggest one practical next step."
   brand_color: "#0F766E"

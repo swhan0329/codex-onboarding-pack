@@ -44,5 +44,5 @@ Good answer:
 After the notes are drafted, do not end the onboarding. Recommend one of these:
 
 - Test the notes on one real Codex task.
-- Turn one repeated workflow into a Skill with `$codex-skill-builder`.
+- Turn one repeated workflow into a Skill with `codex-skill-builder`.
 - Revisit the extension map to decide whether MCP, Plugins, Subagents, Hooks, or AGENTS.md are needed.

@@ -1,7 +1,7 @@
 interface:
-  display_name: "Codex Start Coach"
-  short_description: "Choose the next Codex step"
-  default_prompt: "Use $codex-start to choose the next Codex learning step."
+  display_name: "codex-start"
+  short_description: "Codex Start Coach: choose the next Codex step"
+  default_prompt: "Use the codex-start skill to choose the next Codex learning step."
   brand_color: "#2563EB"
 dependencies:
   tools:

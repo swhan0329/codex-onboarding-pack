@@ -60,7 +60,7 @@ codex plugin list --marketplace codex-onboarding-pack
 
 ```text
 PLUGIN                                       STATUS              VERSION  PATH
-codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.2    ...
+codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.3    ...
 ```
 
 나중에 최신 버전으로 업데이트하려면 아래처럼 실행합니다.
@@ -72,24 +72,16 @@ codex plugin add codex-onboarding-pack@codex-onboarding-pack
 
 `/plugins`에서 직접 설치해도 되고, 위 두 번째 명령처럼 `codex plugin add`로 설치해도 됩니다.
 
-설치 후 새 thread에서 이렇게 시작합니다.
+설치 후 새 thread에서 입력창에 `$`를 입력하고 `codex-start`를 검색해 선택합니다.
 
-```text
-@codex-onboarding-pack start onboarding
-```
-
-또는 시작 스킬을 직접 호출합니다.
-
-```text
-$codex-start
-```
+일부 Codex App 버전에서는 같은 시작점이 `Codex Start Coach`로 보일 수 있습니다. 그 항목을 선택해도 정상입니다.
 
 ## 2. 설치 후 보이는 스킬
 
 ```text
-$codex-start
-$codex-core-coach
-$codex-skill-builder
+codex-start
+codex-core-coach
+codex-skill-builder
 ```
 
 정상이라면 Codex가 다음 중 어떤 도움이 필요한지 물어봅니다.
@@ -116,11 +108,7 @@ cd codex-onboarding-pack
 codex
 ```
 
-Codex가 열리면 이렇게 시작합니다.
-
-```text
-$codex-start
-```
+Codex가 열리면 입력창에서 `$`를 누르고 `codex-start`를 선택합니다.
 
 repo-local skill 파일이 보이는지 확인하려면:
 
@@ -138,13 +126,9 @@ find .agents/skills -maxdepth 2 -name SKILL.md -print
 
 ## 4. 기본기와 용어를 쉽게 배우기
 
-기본기 설명은 `$codex-core-coach` 스킬로 진행됩니다. 이 스킬은 한 번 듣고 끝내는 강의가 아니라, Codex를 쓰다가 막힐 때 다시 부르는 코치입니다.
+기본기 설명은 `codex-core-coach` 스킬로 진행됩니다. 이 스킬은 한 번 듣고 끝내는 강의가 아니라, Codex를 쓰다가 막힐 때 다시 부르는 코치입니다.
 
-직접 호출하고 싶다면 이렇게 입력합니다.
-
-```text
-$codex-core-coach
-```
+직접 쓰고 싶다면 입력창에서 `$`를 누르고 `codex-core-coach`를 선택합니다.
 
 이 스킬로 배울 수 있는 내용은 다음과 같습니다.
 
@@ -187,13 +171,9 @@ MCP가 뭔지 개발자가 아닌 사람도 이해할 수 있게 설명해줘.
 
 ## 5. 반복 업무를 Skill로 만들거나 개선하기
 
-반복 업무를 Codex Skill로 바꾸는 과정은 `$codex-skill-builder`가 담당합니다. 처음 만들 때도 쓰고, 이미 만든 스킬을 고칠 때도 다시 쓸 수 있습니다.
+반복 업무를 Codex Skill로 바꾸는 과정은 `codex-skill-builder`가 담당합니다. 처음 만들 때도 쓰고, 이미 만든 스킬을 고칠 때도 다시 쓸 수 있습니다.
 
-호출합니다.
-
-```text
-$codex-skill-builder
-```
+입력창에서 `$`를 누르고 `codex-skill-builder`를 선택합니다.
 
 처음에는 아래처럼 답해도 좋습니다.
 
@@ -265,15 +245,15 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 
 1. Codex App에서 `/plugins`를 열고 **Codex Onboarding Pack**이 설치되어 있는지 확인합니다.
 2. 설치되어 있다면 새 thread를 시작합니다.
-3. `@codex-onboarding-pack start onboarding`으로 먼저 호출해봅니다.
+3. 새 thread의 입력창에 `$`를 입력하고 `codex-start` 또는 `Codex Start Coach`를 검색합니다.
 4. 그래도 안 보이면 Codex를 재시작합니다.
 
-### `$codex-start`가 안 먹어요
+### `codex-start`가 안 먹어요
 
-먼저 plugin 이름으로 호출합니다.
+`codex-start`를 채팅에 그대로 보내는 방식이 아니라, 입력창에서 `$`를 눌러 skill selector를 열고 `codex-start` 또는 `Codex Start Coach`를 선택합니다.
 
 ```text
-@codex-onboarding-pack start onboarding
+codex-start 스킬을 사용해서 온보딩을 시작해줘.
 ```
 
 repo-local fallback으로 쓰는 중이라면 아래처럼 자연어로 요청합니다.
@@ -300,10 +280,10 @@ repo-local fallback으로 쓰는 중이라면 아래처럼 자연어로 요청�
 2. GitHub URL을 주고 plugin 추가/설치 요청
 3. 필요하면 `codex plugin marketplace add swhan0329/codex-onboarding-pack` 실행
 4. 필요하면 `codex plugin add codex-onboarding-pack@codex-onboarding-pack` 실행
-5. `@codex-onboarding-pack start onboarding`
-6. 모르는 용어나 기본 개념은 `$codex-core-coach`로 질문하기
+5. 새 thread에서 `$`를 누르고 `codex-start` 선택
+6. 모르는 용어나 기본 개념은 `$`를 누르고 `codex-core-coach`를 선택해 질문하기
 7. daily 업무 후보 하나 고르기
-8. 재사용하고 싶은 흐름은 `$codex-skill-builder`로 Skill 초안 만들기
+8. 재사용하고 싶은 흐름은 `$`를 누르고 `codex-skill-builder`를 선택해 Skill 초안 만들기
 9. 실제 업무 하나에 테스트해보기
 10. 필요한 경우 MCP 또는 Plugin으로 확장하기
 
