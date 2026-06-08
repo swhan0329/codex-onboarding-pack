@@ -50,7 +50,7 @@ find .agents/skills -maxdepth 2 -name SKILL.md -print
 아래 세 개가 보이면 정상입니다.
 
 ```text
-.agents/skills/codex-camp-start/SKILL.md
+.agents/skills/codex-start/SKILL.md
 .agents/skills/codex-core-coach/SKILL.md
 .agents/skills/codex-skill-builder/SKILL.md
 ```
@@ -61,7 +61,7 @@ Finder나 파일 탐색기로 확인한다면 아래 파일들이 있는지만 �
 codex-onboarding-pack/
   .agents/
     skills/
-      codex-camp-start/
+      codex-start/
         SKILL.md
       codex-core-coach/
         SKILL.md
@@ -86,7 +86,7 @@ codex-onboarding-pack/
 새 thread에서 아래처럼 입력합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 또는 자연어로 이렇게 요청해도 됩니다.
@@ -120,7 +120,7 @@ codex
 Codex CLI가 열리면 같은 방식으로 시작합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 ## 4. 기본기와 용어를 쉽게 배우기
@@ -252,12 +252,12 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 2. `.agents/skills` 아래에 `SKILL.md` 파일들이 있는지 확인합니다.
 3. Codex를 재시작합니다.
 
-### `$codex-camp-start`가 안 먹어요
+### `$codex-start`가 안 먹어요
 
 아래처럼 자연어로 요청합니다.
 
 ```text
-이 repo의 .agents/skills/codex-camp-start/SKILL.md를 사용해서 온보딩을 시작해줘.
+이 repo의 .agents/skills/codex-start/SKILL.md를 사용해서 온보딩을 시작해줘.
 ```
 
 ### 이 스킬을 모든 프로젝트에서 쓰고 싶어요
@@ -277,7 +277,7 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 1. 저장소 clone 또는 Download ZIP
 2. Codex App 실행
 3. Codex App에서 `codex-onboarding-pack` 폴더 열기
-4. `$codex-camp-start`
+4. `$codex-start`
 5. `Start here` 선택
 6. 모르는 용어나 기본 개념은 `$codex-core-coach`로 질문하기
 7. daily 업무 후보 하나 고르기

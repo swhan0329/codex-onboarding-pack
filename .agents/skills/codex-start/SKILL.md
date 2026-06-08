@@ -1,9 +1,9 @@
 ---
-name: codex-camp-start
+name: codex-start
 description: Start or resume bilingual Codex onboarding as an ongoing learning coach. Use when a user wants to learn Codex, get unstuck, choose the next practical step, understand Codex or developer terms, apply Codex to daily work, or route into skill building in Korean or English.
 ---
 
-# Codex Camp Start
+# Codex Start
 
 This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It chooses the best next step, sets the response language, and routes the learner to the right coach.
 
@@ -19,7 +19,7 @@ This skill is the always-available entry point for the Codex onboarding pack. It
 
 On invocation:
 
-1. Read `references/track-map.md`.
+1. Read `references/current-need-map.md`.
 2. Read `references/official-codex-map.md` only when the user asks what Codex features mean or asks for official sources.
 3. Explain that the goal is to make Codex useful in the learner's actual work, not finish a one-time course.
 4. Offer the current-need menu.

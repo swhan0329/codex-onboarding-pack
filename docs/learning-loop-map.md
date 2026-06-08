@@ -8,7 +8,7 @@ Learners should be able to return to this pack whenever they need help using Cod
 
 | Skill | Purpose | Output |
 | --- | --- | --- |
-| `codex-camp-start` | Route the learner to the right current need and keep language consistent. | Selected next step and skill invocation. |
+| `codex-start` | Route the learner to the right current need and keep language consistent. | Selected next step and skill invocation. |
 | `codex-core-coach` | Explain Codex basics, developer terms, surfaces, and safe workflows through small actions. | `CODEX_WORKING_NOTES.md` or a paste-ready equivalent. |
 | `codex-skill-builder` | Teach skill authoring and improvement by turning real workflows into reusable skills. | `.agents/skills/<workflow-name>/SKILL.md` draft or improvement plan. |
 

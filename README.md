@@ -7,7 +7,7 @@ Guided Codex onboarding skills for people who want to learn Codex by producing r
 
 This pack starts with three skills:
 
-- `$codex-camp-start`: the bilingual always-on entry point.
+- `$codex-start`: the bilingual always-on entry point.
 - `$codex-core-coach`: plain-language Codex basics, developer terms, and daily workflow coaching.
 - `$codex-skill-builder`: create, test, improve, and reuse Codex skills.
 
@@ -22,7 +22,7 @@ The learning flow supports Korean and English. Codex should answer in the user's
 5. Ask:
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 Codex should detect the repo-local skills under `.agents/skills` and begin the onboarding flow.
@@ -40,7 +40,7 @@ git clone https://github.com/swhan0329/codex-onboarding-pack.git
 In Codex App, open the cloned `codex-onboarding-pack` folder, start a new thread, and ask:
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 ### Repo-local use in Codex CLI
@@ -54,7 +54,7 @@ codex
 Then ask:
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 ### Plugin marketplace use
@@ -86,7 +86,7 @@ Restart Codex if the skills do not appear immediately.
 Start with:
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 Then choose what you need right now:

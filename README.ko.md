@@ -7,7 +7,7 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 이 팩은 세 개의 스킬로 시작합니다.
 
-- `$codex-camp-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
+- `$codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
 - `$codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명합니다.
 - `$codex-skill-builder`: 업무 흐름을 Codex Skill로 만들고, 테스트하고, 계속 개선합니다.
 
@@ -22,7 +22,7 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 5. 아래처럼 요청합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 Codex가 `.agents/skills` 아래의 repo-local skill을 찾으면 온보딩 흐름이 시작됩니다.
@@ -40,7 +40,7 @@ git clone https://github.com/swhan0329/codex-onboarding-pack.git
 Codex App에서 clone된 `codex-onboarding-pack` 폴더를 열고, 새 thread에서 이렇게 요청합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 ### Codex CLI에서 repo-local 사용
@@ -54,7 +54,7 @@ codex
 그다음 이렇게 요청합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 ### Plugin marketplace 사용
@@ -86,7 +86,7 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 처음에는 이렇게 시작합니다.
 
 ```text
-$codex-camp-start
+$codex-start
 ```
 
 그다음 지금 필요한 흐름을 고릅니다.

@@ -5,7 +5,7 @@ Use this when the user is running a class, workshop, or internal onboarding sess
 ## Run-of-Show
 
 1. Ask learners to open Codex in a real folder, not an empty demo folder.
-2. Start with `$codex-camp-start`.
+2. Start with `$codex-start`.
 3. Have learners choose Start here.
 4. Use `$codex-core-coach` to explain the current surface and any unfamiliar terms.
 5. Ask each learner to choose one daily task they want Codex to help with.
