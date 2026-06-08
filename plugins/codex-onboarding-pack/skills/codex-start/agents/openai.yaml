@@ -1,0 +1,12 @@
+interface:
+  display_name: "Codex Start Coach"
+  short_description: "Choose the next Codex step"
+  default_prompt: "Use $codex-start to choose the next Codex learning step."
+  brand_color: "#2563EB"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "openaiDeveloperDocs"
+      description: "OpenAI developer docs for current Codex references"
+      transport: "streamable_http"
+      url: "https://developers.openai.com/mcp"

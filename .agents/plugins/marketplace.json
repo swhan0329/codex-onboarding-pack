@@ -5,7 +5,7 @@
       "name": "codex-onboarding-pack",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/codex-onboarding-pack"
       },
       "policy": {
         "installation": "AVAILABLE",

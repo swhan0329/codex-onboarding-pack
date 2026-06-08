@@ -47,9 +47,10 @@ Codex가 직접 진행할 수 있으면 안내에 따라 설치합니다.
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-그다음 Codex App에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치합니다.
+`/plugins`에서 직접 설치해도 되고, 위 두 번째 명령처럼 `codex plugin add`로 설치해도 됩니다.
 
 설치 후 새 thread에서 이렇게 시작합니다.
 
@@ -276,7 +277,7 @@ repo-local fallback으로 쓰는 중이라면 아래처럼 자연어로 요청�
 1. Codex App 실행
 2. GitHub URL을 주고 plugin 추가/설치 요청
 3. 필요하면 `codex plugin marketplace add swhan0329/codex-onboarding-pack` 실행
-4. `/plugins`에서 **Codex Onboarding Pack** 설치
+4. 필요하면 `codex plugin add codex-onboarding-pack@codex-onboarding-pack` 실행
 5. `@codex-onboarding-pack start onboarding`
 6. 모르는 용어나 기본 개념은 `$codex-core-coach`로 질문하기
 7. daily 업무 후보 하나 고르기

@@ -27,13 +27,14 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 https://github.com/swhan0329/codex-onboarding-pack
 ```
 
-3. Codex가 marketplace 추가 명령을 요청하면 아래 명령을 사용합니다.
+3. Codex가 터미널 명령을 요청하면 아래 명령을 사용합니다.
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-4. Codex에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치한 뒤 새 thread에서 시작합니다.
+4. 새 thread에서 시작합니다.
 
 ```text
 @codex-onboarding-pack start onboarding
@@ -55,9 +56,10 @@ GitHub repo를 marketplace source로 추가합니다.
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-그다음 Codex에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치한 뒤 새 스레드에서 시작합니다.
+그다음 Codex에서 새 스레드를 열고 시작합니다.
 
 ```text
 @codex-onboarding-pack start onboarding

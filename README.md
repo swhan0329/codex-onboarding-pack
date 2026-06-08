@@ -27,13 +27,14 @@ Add and install this Codex plugin from GitHub:
 https://github.com/swhan0329/codex-onboarding-pack
 ```
 
-3. If Codex asks for the marketplace command, use:
+3. If Codex asks for terminal commands, use:
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-4. Open `/plugins`, install **Codex Onboarding Pack**, start a new thread, and ask:
+4. Start a new thread and ask:
 
 ```text
 @codex-onboarding-pack start onboarding
@@ -55,9 +56,10 @@ Add the GitHub repo as a marketplace source:
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
+codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
-Then open Codex, use `/plugins`, install **Codex Onboarding Pack**, start a new thread, and ask:
+Then open Codex, start a new thread, and ask:
 
 ```text
 @codex-onboarding-pack start onboarding
