@@ -1,5 +1,7 @@
 # Codex Onboarding Pack
 
+[한국어 README](README.ko.md)
+
 Guided Codex onboarding skills for people who want to learn Codex by producing real work artifacts.
 
 This pack starts with three skills:

@@ -1,0 +1,94 @@
+# Codex Onboarding Pack
+
+[English README](README.md)
+
+Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물을 남기면서 익힐 수 있도록 만든 온보딩 스킬 팩입니다.
+
+이 팩은 세 개의 스킬로 시작합니다.
+
+- `$codex-camp-start`: 온보딩 시작점입니다. 사용자의 언어와 학습 트랙을 정합니다.
+- `$codex-day1-core`: Codex 핵심 기능 지도와 daily workflow 적용 방향을 배웁니다.
+- `$codex-day2-skills`: 반복 업무를 첫 Codex Skill로 바꾸는 실습을 진행합니다.
+
+커리큘럼은 한국어와 영어를 모두 지원합니다. 사용자가 한국어로 말하면 한국어로, 영어로 말하면 영어로 진행하며, `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md` 같은 공식 제품 용어는 영어 표기를 함께 유지합니다.
+
+## 설치
+
+### Repo-local 사용
+
+이 저장소를 clone한 뒤 repo root에서 Codex를 실행합니다.
+
+```bash
+codex
+```
+
+그다음 이렇게 요청합니다.
+
+```text
+$codex-camp-start
+```
+
+### Plugin marketplace 사용
+
+이 저장소에는 최소 plugin manifest와 marketplace entry도 포함되어 있습니다. GitHub 계정에서 이 private repo에 접근할 수 있다면, Codex marketplace source로 추가할 수 있습니다.
+
+```bash
+codex plugin marketplace add swhan0329/codex-onboarding-pack
+```
+
+그다음 Codex에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치한 뒤 새 스레드에서 시작합니다.
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+### 사용자 전체 설치
+
+어떤 프로젝트에서든 이 스킬들을 쓰고 싶다면 아래 스크립트를 실행합니다.
+
+```bash
+./scripts/install-to-user-skills.sh
+```
+
+스킬이 바로 보이지 않으면 Codex를 재시작합니다.
+
+## 첫 실행
+
+처음에는 이렇게 시작합니다.
+
+```text
+$codex-camp-start
+```
+
+그다음 원하는 트랙을 고릅니다.
+
+- 빠른 체험: Codex 핵심 기능 지도를 짧게 훑습니다.
+- Daily workflow: 실제 반복 업무 하나를 Codex workflow로 바꿉니다.
+- Skill builder: 내 첫 Codex Skill을 만듭니다.
+- Facilitator mode: 수업이나 워크샵 진행안으로 사용합니다.
+
+## 무엇을 배우나
+
+이 온보딩은 다음을 단계적으로 다룹니다.
+
+- Codex app, CLI, IDE extension, web/cloud의 차이
+- `Skill`을 만드는 방법
+- `Plugin`이 왜 배포 단위인지
+- `MCP`로 외부 도구와 문맥을 연결하는 방법
+- `Subagent`로 탐색과 리뷰를 나누는 방법
+- `Hook`으로 검증이나 기록을 자동화하는 방법
+- `AGENTS.md`로 프로젝트 규칙을 남기는 방법
+- daily 업무를 Codex로 반복 가능한 workflow로 바꾸는 방법
+
+## 결과물
+
+학습자는 다음 중 하나 이상의 작업물을 남기게 됩니다.
+
+- `CODEX_ONBOARDING_MAP.md`
+- daily workflow 후보 목록
+- `.agents/skills/my-first-workflow/SKILL.md`
+- 본인 업무에 맞춘 Skill 초안
+
+## 기준 문서
+
+커리큘럼은 Codex 공식 문서의 Skills, Plugins, MCP, Subagents, Hooks, app features, workflows 내용을 기준으로 구성했습니다. 각 스킬의 reference 파일에는 Codex가 필요할 때 최신 공식 문서를 다시 확인할 수 있도록 링크를 포함했습니다.
