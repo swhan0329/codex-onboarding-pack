@@ -1,18 +1,18 @@
-# Customer Feedback Notes
+# 사용자 피드백 메모
 
-These notes are intentionally messy.
+일부러 조금 지저분하게 적어둔 더미 피드백입니다.
 
-## Feedback
+## 피드백
 
-- "I installed the plugin, but I do not know what to do next."
-- "It would help if there were a folder I could safely change."
-- "The skill names are confusing when the UI shows a different label."
-- "I want to see Codex read a file, edit a file, and explain the diff."
-- "Please do not start with MCP. I want a first win."
-- "A Korean guide is helpful, but English prompts would make it easier to share globally."
+- "설치는 했는데, 그 다음에 뭘 해야 할지 모르겠어요."
+- "마음대로 고쳐도 되는 폴더가 있으면 좋겠어요."
+- "UI에 보이는 이름과 문서에 적힌 이름이 다르면 헷갈려요."
+- "Codex가 파일을 읽고, 고치고, 변경 내용을 설명하는 걸 보고 싶어요."
+- "처음부터 MCP 설명으로 들어가면 어렵게 느껴져요. 먼저 작은 성공을 해보고 싶어요."
+- "한국어 가이드는 좋은데, 해외에도 공유하려면 영어 프롬프트도 있으면 좋겠어요."
 
-## Open Questions
+## 열린 질문
 
-- Should onboarding create files automatically or ask first?
-- Should the first task write to disk or only answer in chat?
-- How do we explain verification without sounding too technical?
+- 온보딩이 실습 폴더를 자동으로 만들어도 될까?
+- 첫 작업은 파일을 수정하지 않고 채팅 답변만 하게 하는 게 좋을까?
+- 검증이라는 말을 너무 개발자스럽지 않게 어떻게 설명할까?

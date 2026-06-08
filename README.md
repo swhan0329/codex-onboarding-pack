@@ -9,7 +9,7 @@ Created by **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.
 
 Links: [Portfolio](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
 
-This repo includes a `practice-lab-template/` folder with dummy files. Onboarding can copy it into `codex-practice-lab/` so learners can try summarizing meeting notes, editing a draft, fixing a tiny bug, and summarizing CSV data.
+This repo includes a `practice-lab-template/` folder with dummy files. Onboarding can copy it into `codex-practice-lab/` so learners can try summarizing meeting notes, editing a draft, fixing a tiny bug, and summarizing CSV data. The default dummy data is Korean-first, with `.en.md` versions for English users.
 
 This pack starts with three skills:
 

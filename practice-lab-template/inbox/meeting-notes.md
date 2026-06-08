@@ -1,26 +1,27 @@
-# Meeting Notes: AI Workflow Pilot
+# 회의 메모: Codex 온보딩 실습 개선
 
-Date: 2026-06-08
-Team: Ops, Education, Product
+일자: 2026-06-08
+팀: 운영, 교육, 제품
 
-## Raw Notes
+## 메모
 
-- We want a simple Codex onboarding flow for new users.
-- People get stuck when the first step is too abstract.
-- Need a practice folder with fake files so users can safely ask Codex to read, edit, and verify something.
-- Mina said the first task should take less than 10 minutes.
-- Joon asked whether MCP should be explained before skills. Decision: no, show a practical workflow first.
-- Draft README still says too much about features.
-- Need one Korean prompt and one English prompt for global use.
-- Someone should check whether the JavaScript demo has a boundary bug.
-- Follow-up: create a short "what changed" summary after Codex edits a file.
-- Risk: users may think Codex is magic if we skip verification.
+- 새 사용자는 빈 화면에서 "뭘 시켜야 하지?"에서 막힌다.
+- 기능 설명보다 더미 폴더를 먼저 만져보게 하는 편이 좋다.
+- 첫 실습은 10분 안에 끝나야 한다.
+- 민아: 회의록을 action item 표로 바꾸는 것부터 시작하면 부담이 적다.
+- 준: MCP 설명은 나중으로 미루고, 먼저 파일 읽기와 수정 경험을 보여주자.
+- 현재 공지 초안은 너무 기능 나열처럼 보인다.
+- 한국어 사용자는 영어 더미 데이터가 많으면 내 일처럼 느끼기 어렵다.
+- 영어 사용자도 쓸 수 있도록 영어 프롬프트는 별도로 유지한다.
+- JavaScript 데모에 경계값 버그가 있는지 확인해야 한다.
+- Codex가 파일을 수정한 뒤에는 "무엇을 바꿨는지 / 어떻게 확인했는지"를 짧게 남기게 하자.
+- 검증 없이 넘어가면 Codex가 마법처럼 보일 수 있으니 사람이 확인할 지점을 꼭 남기자.
 
-## Possible Actions Mentioned
+## 언급된 액션 후보
 
-- Create practice-lab-template in the GitHub repo.
-- Add copy-paste prompts.
-- Ask Codex to make an action-item table.
-- Ask Codex to edit the announcement draft.
-- Ask Codex to run a tiny verification command.
-- Keep human review explicit.
+- 한국어 기본 더미 파일 만들기
+- 영어판 더미 파일은 `.en.md`로 유지하기
+- 첫 프롬프트가 다음 프롬프트 파일을 안내하게 만들기
+- 공지 초안 다듬기 실습 추가하기
+- 작은 코드 버그를 고치고 `node`로 확인하는 실습 추가하기
+- 사람이 확인해야 할 검증 포인트를 매번 남기기

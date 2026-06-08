@@ -1,24 +1,24 @@
-# Bug Report: score label boundary
+# 버그 리포트: 점수 라벨 경계값
 
-The tiny demo in `simple_app.js` turns a numeric score into a label.
+`simple_app.js`는 숫자 점수를 라벨로 바꾸는 아주 작은 데모입니다.
 
-Expected behavior:
+기대 동작:
 
-| Score | Expected label |
+| 점수 | 기대 라벨 |
 | --- | --- |
 | 80 | great |
 | 79 | ok |
 | 50 | ok |
 | 49 | check |
 
-Current suspicion:
+의심되는 문제:
 
-- `80` may be labeled `ok`.
-- `50` may be labeled `check`.
+- `80`이 `ok`로 나올 수 있습니다.
+- `50`이 `check`로 나올 수 있습니다.
 
-Task:
+작업:
 
-1. Read `simple_app.js`.
-2. Explain the boundary issue.
-3. Make the smallest fix.
-4. Run the file with Node.js and confirm the output.
+1. `simple_app.js`를 읽습니다.
+2. 경계값 문제가 무엇인지 설명합니다.
+3. 가장 작은 수정만 합니다.
+4. Node.js로 파일을 실행해 결과를 확인합니다.

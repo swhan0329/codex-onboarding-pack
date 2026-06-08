@@ -2,7 +2,7 @@
 
 이 문서는 Codex Onboarding Pack을 처음 쓰는 사람이 하나씩 따라 해볼 수 있도록 만든 한국어 가이드입니다.
 
-목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 더미 실습 폴더를 실제로 읽고, 고치고, 확인하면서 Codex가 어떤 식으로 일하는지 몸으로 느끼는 것입니다.
+목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 한국어 더미 실습 폴더를 실제로 읽고, 고치고, 확인하면서 Codex가 어떤 식으로 일하는지 몸으로 느끼는 것입니다.
 
 만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
 
@@ -60,7 +60,7 @@ codex plugin list --marketplace codex-onboarding-pack
 
 ```text
 PLUGIN                                       STATUS              VERSION  PATH
-codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.4    ...
+codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.5    ...
 ```
 
 나중에 최신 버전으로 업데이트하려면 아래처럼 실행합니다.
@@ -103,13 +103,15 @@ Start here로 시작할게.
 ```text
 codex-practice-lab/
   inbox/meeting-notes.md
+  inbox/meeting-notes.en.md
   drafts/product-announcement.md
+  drafts/product-announcement.en.md
   project/simple_app.js
   data/weekly-metrics.csv
   prompts/01-first-task.ko.md
 ```
 
-첫 단계는 `prompts/01-first-task.ko.md` 내용을 복사해서 Codex에 붙여넣는 것입니다.
+첫 단계는 `prompts/01-first-task.ko.md` 내용을 복사해서 Codex에 붙여넣는 것입니다. 영어 사용자는 `.en.md` 프롬프트와 영어 더미 파일을 사용하면 됩니다.
 
 ## 3. Repo-local fallback
 

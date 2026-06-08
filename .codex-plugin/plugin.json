@@ -1,6 +1,6 @@
 {
   "name": "codex-onboarding-pack",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Bilingual Codex onboarding coach by Codex Ambassador Seowoo Han, with skills for plain-language basics, daily workflows, and reusable skill authoring.",
   "skills": "./plugins/codex-onboarding-pack/skills/"
 }

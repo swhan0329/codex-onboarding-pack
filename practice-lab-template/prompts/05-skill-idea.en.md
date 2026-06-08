@@ -15,4 +15,7 @@ Format:
 - Verification
 - Output
 - Boundaries
+
+End with:
+`If you want to turn this idea into a real Skill, select codex-skill-builder in a new request and ask: "Turn the skill draft we just made into a real SKILL.md."`
 ```

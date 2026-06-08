@@ -20,11 +20,15 @@ Codex is easier to understand when the learner can watch it read files, edit a s
 Create or open the practice lab:
 
 1. If `codex-practice-lab/` does not exist, copy it from the included `practice-lab-template/`.
-2. Ask the learner to open one prompt file:
+2. If `codex-practice-lab/` exists but lacks `START_HERE.ko.md`, treat it as an older lab. Do not overwrite it. Create `codex-practice-lab-ko/` or ask before replacing it.
+3. Ask the learner to open the matching start file:
+   - Korean: `START_HERE.ko.md`
+   - English: `START_HERE.en.md`
+4. Ask the learner to open one prompt file:
    - Korean: `codex-practice-lab/prompts/01-first-task.ko.md`
    - English: `codex-practice-lab/prompts/01-first-task.en.md`
-3. Tell the learner to copy/paste that prompt into Codex.
-4. Stop and wait for `완료`, `다음`, `done`, or `next`.
+5. Tell the learner to copy/paste that prompt into Codex.
+6. Stop and wait for `완료`, `다음`, `done`, or `next`.
 
 If the practice lab already exists, ask the learner to reuse it and continue with the next prompt in `codex-practice-lab/prompts/`.
 

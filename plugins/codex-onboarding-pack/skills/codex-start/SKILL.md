@@ -44,15 +44,21 @@ The pack includes a hands-on template named `practice-lab-template`. Use it befo
 When the learner is starting from a blank workspace:
 
 1. Check whether `codex-practice-lab/` already exists in the current workspace.
-2. If it does not exist and file writing is allowed, create it by copying the included `practice-lab-template/`.
-3. Prefer the helper script when available:
+2. If it exists but does not contain `START_HERE.ko.md`, treat it as an older lab. Do not overwrite it. Create `codex-practice-lab-ko/` instead, or ask before replacing the old folder.
+3. If no practice lab exists and file writing is allowed, create `codex-practice-lab/` by copying the included `practice-lab-template/`.
+4. Prefer the helper script when available:
    - installed plugin path: `../../scripts/create-practice-lab.sh` relative to this skill folder
    - repo-local path: `../../../scripts/create-practice-lab.sh` relative to this skill folder
-4. If the script is not available, copy the template manually from one of these locations:
+5. If the script is not available, copy the template manually from one of these locations:
    - installed plugin path: `../../practice-lab-template/`
    - repo-local path: `../../../practice-lab-template/`
-5. After creating or finding the lab, ask the learner to open `codex-practice-lab/prompts/01-first-task.ko.md` or `codex-practice-lab/prompts/01-first-task.en.md` and copy/paste the prompt.
-6. Stop so the learner can run the first practice prompt.
+6. After creating or finding the lab, ask the learner to open the matching `START_HERE` file first:
+   - Korean: `START_HERE.ko.md`
+   - English: `START_HERE.en.md`
+7. Then ask the learner to copy/paste the first prompt:
+   - Korean: `prompts/01-first-task.ko.md`
+   - English: `prompts/01-first-task.en.md`
+8. Stop so the learner can run the first practice prompt.
 
 If writing files is not appropriate, show the first prompt from the template in chat and say the user can clone the repo to get the full lab files.
 

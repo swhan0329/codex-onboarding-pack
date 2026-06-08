@@ -10,4 +10,6 @@ Include:
 - Two useful follow-up questions
 
 Do not edit files. Reply in chat only.
+
+End by telling me to open and copy/paste `prompts/05-skill-idea.en.md` next.
 ```

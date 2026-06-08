@@ -1,15 +1,15 @@
-# Example AGENTS.md
+# AGENTS.md 예시
 
-Use this as a tiny example of project-level instructions for Codex.
+Codex에게 프로젝트별 규칙을 알려줄 때 이런 식으로 쓸 수 있습니다.
 
-## Rules
+## 규칙
 
-- Keep changes small.
-- Explain any file edits.
-- Run a relevant check when possible.
-- Do not use real secrets in practice files.
+- 변경은 작게 유지합니다.
+- 파일을 수정했다면 무엇을 바꿨는지 설명합니다.
+- 가능하면 관련 검증 명령을 실행합니다.
+- 실습 파일에 실제 비밀 정보나 API key를 넣지 않습니다.
 
-## Useful Commands
+## 유용한 명령
 
 ```bash
 node project/simple_app.js

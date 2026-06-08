@@ -1,13 +1,13 @@
-# Draft Announcement
+# 공지 초안
 
-We made a Codex onboarding thing.
+Codex 온보딩 팩을 만들었습니다.
 
-It has some skills and explains Codex. Users can learn skills, plugins, MCP, and daily workflows. It should be helpful.
+스킬 몇 개가 있고 Codex를 설명합니다. 사용자는 Skill, Plugin, MCP, daily workflow 같은 것을 배울 수 있습니다. 도움이 될 것 같습니다.
 
-Maybe users can install it and then use the start skill. We should tell them to try it.
+설치하고 start skill을 쓰면 될 것 같습니다. 해보라고 말하면 됩니다.
 
-Need to mention Korean and English support.
+한국어와 영어를 지원한다고 써야 합니다.
 
-Need to mention that this is made by Seowoo Han.
+한서우가 만들었다는 것도 써야 합니다.
 
-This draft needs a warmer intro and clearer first action.
+이 초안은 조금 더 따뜻한 첫 문장과, 사용자가 바로 할 수 있는 첫 행동이 필요합니다.

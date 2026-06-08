@@ -9,7 +9,7 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 링크: [포트폴리오](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
 
-이 repo에는 `practice-lab-template/` 더미 실습 폴더가 함께 들어 있습니다. 온보딩을 시작하면 Codex가 이 템플릿을 `codex-practice-lab/`로 복사해서, 사용자가 회의록 요약, 공지 초안 수정, 작은 버그 수정, CSV 요약을 직접 해볼 수 있게 합니다.
+이 repo에는 `practice-lab-template/` 더미 실습 폴더가 함께 들어 있습니다. 온보딩을 시작하면 Codex가 이 템플릿을 `codex-practice-lab/`로 복사해서, 사용자가 회의록 요약, 공지 초안 수정, 작은 버그 수정, CSV 요약을 직접 해볼 수 있게 합니다. 기본 더미 데이터는 한국어 업무 문맥이고, 영어 사용자를 위한 `.en.md` 파일도 함께 들어 있습니다.
 
 이 팩은 세 개의 스킬로 시작합니다.
 

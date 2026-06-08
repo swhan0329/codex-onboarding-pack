@@ -15,4 +15,7 @@
 - Verification
 - Output
 - Boundaries
+
+마지막에는 이렇게 안내해줘:
+`이 아이디어를 실제 Skill로 만들고 싶다면, 새 요청에서 codex-skill-builder를 선택하고 "방금 만든 Skill 초안을 실제 SKILL.md로 만들어줘"라고 말해보세요.`
 ```
