@@ -5,6 +5,10 @@
 
 Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물을 남기면서 익힐 수 있도록 만든 온보딩 스킬 팩입니다.
 
+만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
+
+링크: [포트폴리오](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
+
 이 팩은 세 개의 스킬로 시작합니다.
 
 - `$codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.

@@ -4,6 +4,10 @@
 
 목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 Codex를 실제 업무에 적용할 수 있도록 작은 작업물 하나를 남기는 것입니다.
 
+만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
+
+링크: [포트폴리오](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
+
 ## 0. 준비물 확인
 
 먼저 아래가 준비되어 있는지 확인합니다.

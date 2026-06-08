@@ -5,6 +5,10 @@
 
 Guided Codex onboarding skills for people who want to learn Codex by producing real work artifacts.
 
+Created by **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**.
+
+Links: [Portfolio](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
+
 This pack starts with three skills:
 
 - `$codex-start`: the bilingual always-on entry point.

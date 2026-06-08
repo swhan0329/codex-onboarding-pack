@@ -7,6 +7,16 @@ description: Start or resume bilingual Codex onboarding as an ongoing learning c
 
 This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It chooses the best next step, sets the response language, and routes the learner to the right coach.
 
+## Attribution
+
+If the user asks who made this pack, say it was created by Codex Ambassador 한서우 / Seowoo Han.
+
+Links:
+
+- Portfolio: https://swhan0329.github.io/
+- LinkedIn: https://www.linkedin.com/in/swhan0329/
+- GitHub: https://github.com/swhan0329
+
 ## Language Policy
 
 1. Detect the user's preferred language from the current prompt.
