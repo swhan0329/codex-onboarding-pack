@@ -1,0 +1,6 @@
+{
+  "name": "codex-onboarding-pack",
+  "version": "0.1.0",
+  "description": "Bilingual Codex onboarding curriculum with skills for core concepts and first workflow authoring.",
+  "skills": "./.agents/skills/"
+}

@@ -1,0 +1,12 @@
+interface:
+  display_name: "Codex Camp Start"
+  short_description: "Start guided Codex onboarding"
+  default_prompt: "Use $codex-camp-start to begin the Codex onboarding camp."
+  brand_color: "#2563EB"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "openaiDeveloperDocs"
+      description: "OpenAI developer docs for current Codex references"
+      transport: "streamable_http"
+      url: "https://developers.openai.com/mcp"

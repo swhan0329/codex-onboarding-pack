@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Day 2 Skills"
+  short_description: "Create your first Codex skill"
+  default_prompt: "Use $codex-day2-skills to turn a daily workflow into a Codex skill."
+  brand_color: "#7C3AED"
