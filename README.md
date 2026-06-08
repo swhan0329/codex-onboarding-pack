@@ -3,7 +3,7 @@
 [한국어 README](README.ko.md)
 | [한국어 Step-by-Step Guide](GETTING_STARTED.ko.md)
 
-Guided Codex onboarding skills for people who want to learn Codex by producing real work artifacts.
+Guided Codex onboarding skills for people who want to keep learning Codex by producing real work artifacts.
 
 Created by **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**.
 
@@ -12,7 +12,7 @@ Links: [Portfolio](https://swhan0329.github.io/) · [LinkedIn](https://www.linke
 This pack starts with three skills:
 
 - `$codex-start`: the bilingual always-on entry point.
-- `$codex-core-coach`: plain-language Codex basics, developer terms, and daily workflow coaching.
+- `$codex-core-coach`: plain-language Codex basics, developer terms, daily workflow coaching, and recommended next steps.
 - `$codex-skill-builder`: create, test, improve, and reuse Codex skills.
 
 The learning flow supports Korean and English. Codex should answer in the user's dominant language, while keeping official product terms such as Skill, Plugin, MCP, Subagent, Hook, and AGENTS.md visible.
@@ -111,7 +111,9 @@ Then choose what you need right now:
 - Explain simply: ask for plain-language explanations of Codex or developer terms.
 - Daily workflow: turn a real recurring task into a Codex workflow.
 - Skill builder: create or improve a reusable skill.
-- Facilitator mode: run this as a class or workshop.
+- Extend Codex: decide whether MCP, Plugins, Subagents, Hooks, or AGENTS.md are needed.
+
+After each completed step, Codex should recommend one next step and offer two alternatives. Reply `next` to continue on the recommended path.
 
 ## Source Basis
 

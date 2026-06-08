@@ -35,3 +35,11 @@ Good answer:
 - Produces a usable `SKILL.md`.
 - Has at least one realistic test prompt.
 - Has one next improvement, not ten.
+
+## CONTINUE
+
+After the review, do not end the onboarding. Recommend one of these:
+
+- Run the skill on one real work item and inspect the result.
+- Improve the skill description based on a false positive or false negative trigger.
+- Decide whether the skill should stay local, be shared as a Plugin, or connect to live data through MCP or an app connector.

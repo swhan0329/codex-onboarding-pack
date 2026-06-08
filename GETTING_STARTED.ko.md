@@ -2,7 +2,7 @@
 
 이 문서는 Codex Onboarding Pack을 처음 쓰는 사람이 하나씩 따라 해볼 수 있도록 만든 한국어 가이드입니다.
 
-목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 Codex를 실제 업무에 적용할 수 있도록 작은 작업물 하나를 남기는 것입니다.
+목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 Codex를 실제 업무에 적용할 수 있도록 작은 작업물 하나를 남기고, 다음 실습으로 계속 이어가는 것입니다.
 
 만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
 
@@ -78,7 +78,7 @@ $codex-skill-builder
 - Explain simply
 - Daily workflow
 - Skill builder
-- Facilitator mode
+- Extend Codex
 
 처음이라면 이렇게 답하세요.
 
@@ -157,6 +157,8 @@ MCP가 뭔지 개발자가 아닌 사람도 이해할 수 있게 설명해줘.
 ```text
 다음
 ```
+
+그러면 Codex가 대화를 끝내지 않고 추천 다음 단계 1개와 대안 2개를 제안합니다. 추천 경로로 이어가려면 다시 `다음`이라고 답하면 됩니다.
 
 목표 결과물은 아래 중 하나입니다.
 

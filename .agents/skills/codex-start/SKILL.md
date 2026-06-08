@@ -5,7 +5,7 @@ description: Start or resume bilingual Codex onboarding as an ongoing learning c
 
 # Codex Start
 
-This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It chooses the best next step, sets the response language, and routes the learner to the right coach.
+This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It chooses the best next step, sets the response language, routes the learner to the right coach, and keeps the learning loop open after each completed step.
 
 ## Attribution
 
@@ -41,7 +41,35 @@ When the user chooses:
 - Start from basics, feature map, or developer-term explanation -> invoke or route to `$codex-core-coach`.
 - Daily workflow -> route to `$codex-core-coach` module 4, then offer `$codex-skill-builder` if the workflow should become reusable.
 - Build or improve a skill -> route to `$codex-skill-builder`.
-- Facilitator mode -> read `references/facilitator-guide.md`, then create a run-of-show.
+- MCP, Plugin, Subagent, Hook, or AGENTS.md questions -> route to `$codex-core-coach` module 2 first, then offer `$codex-skill-builder` block 5 if the learner wants to package or connect a workflow.
+
+## Keep-Going Protocol
+
+The onboarding should not end after one module. After any answer, completed practice step, or artifact review:
+
+1. Acknowledge the user's progress in one sentence.
+2. Recommend exactly one next step based on what they just did.
+3. Offer two short alternatives.
+4. If the next step belongs to another skill, name that skill explicitly so the user can invoke it.
+5. If the user says `next`, `다음`, `continue`, or `계속`, choose the recommended next step and continue.
+
+In Korean, end continuation moments with this shape:
+
+```text
+다음은 이걸 추천해요: ...
+다른 선택지도 있어요: 1) ... 2) ...
+원하면 `다음`이라고 답해주세요.
+```
+
+In English:
+
+```text
+Recommended next: ...
+Other options: 1) ... 2) ...
+Reply `next` if you want me to continue.
+```
+
+Do not end with only "finished", "done", "수고하셨습니다", or a generic closing.
 
 ## Current-Need Menu
 
@@ -53,7 +81,7 @@ Use this menu, translated into the active language:
 | Explain simply | Users blocked by Codex or developer terms. | `$codex-core-coach` |
 | Daily workflow | People who want to apply Codex to recurring work. | `$codex-core-coach`, then possibly `$codex-skill-builder` |
 | Skill builder | People ready to create or improve a reusable skill. | `$codex-skill-builder` |
-| Facilitator mode | Instructors running a class or workshop. | `references/facilitator-guide.md` |
+| Extend Codex | People deciding whether they need MCP, Plugins, Subagents, Hooks, or AGENTS.md. | `$codex-core-coach`, then possibly `$codex-skill-builder` |
 
 ## Output Style
 
@@ -66,3 +94,4 @@ Use this menu, translated into the active language:
   - connect Codex to daily work,
   - create and keep improving reusable workflow skills.
 - If a developer term appears, briefly explain it in plain language before routing.
+- Always leave the learner with a recommended continuation unless the current step is Phase A practice and they need to try something before continuing.

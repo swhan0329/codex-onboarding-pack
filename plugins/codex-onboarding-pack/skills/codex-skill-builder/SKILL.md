@@ -11,7 +11,7 @@ Teach skill authoring as a repeatable practice loop. Help the learner turn one r
 
 Use the user's dominant language. In Korean, keep official English terms visible with Korean explanations. In English, use plain English and concrete examples. Skills created by this tutorial may be bilingual when the learner wants global reuse.
 
-## Stop Protocol
+## Practice And Continuation Protocol
 
 Each block has two phases.
 
@@ -28,9 +28,14 @@ Phase A:
 Phase B:
 
 1. When the user replies completion, check the artifact or ask one reflection question.
-2. Offer the next block, a refinement pass, or a real-work test.
+2. Recommend exactly one next step.
+3. Offer two short alternatives.
+4. If the next step depends on Codex basics, MCP, Plugin packaging, or daily workflow selection, route back to `$codex-core-coach` or the relevant block in this skill.
+5. If the user replies `next`, `다음`, `continue`, or `계속` without choosing, continue with the recommended next step.
 
 For repeat use, do not assume the learner is making their first skill. If they already have a skill, help them improve its trigger description, simplify instructions, add references, test it against a realistic prompt, or decide whether MCP/plugin packaging is needed.
+
+Do not close the conversation after the learner creates a first `SKILL.md`. A first draft should lead into testing, installation, real-work use, or MCP/plugin handoff.
 
 ## Practice Loop
 
@@ -45,6 +50,36 @@ For repeat use, do not assume the learner is making their first skill. If they a
 | 6 | `references/block6-wrap.md` | Finish a reusable workflow artifact and choose the next improvement. |
 
 Start at Block 0 unless the user already has a specific workflow, existing skill, or bug to improve.
+
+## Continuation Routes
+
+Use these routes after each completion:
+
+| If the learner just finished | Recommended continuation |
+| --- | --- |
+| Block 0 skill concept | Block 1 workflow design. |
+| Block 1 workflow design | Block 2 skill structure. |
+| Block 2 skill structure | Block 3 bilingual design when the skill is for global or Korean/English users; otherwise Block 4 testing. |
+| Block 3 bilingual design | Block 4 test and install. |
+| Block 4 test and install | Improve trigger description if tests failed; otherwise Block 5 MCP/plugin handoff. |
+| Block 5 MCP/plugin handoff | Block 6 wrap. |
+| Block 6 wrap | Run the skill on one real task, then refine from evidence. |
+
+Korean continuation shape:
+
+```text
+다음은 이걸 추천해요: ...
+다른 선택지도 있어요: 1) ... 2) ...
+원하면 `다음`이라고 답해주세요.
+```
+
+English continuation shape:
+
+```text
+Recommended next: ...
+Other options: 1) ... 2) ...
+Reply `next` if you want me to continue.
+```
 
 ## Artifact
 

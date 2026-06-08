@@ -3,7 +3,7 @@
 [English README](README.md)
 | [Step-by-Step 시작 가이드](GETTING_STARTED.ko.md)
 
-Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물을 남기면서 익힐 수 있도록 만든 온보딩 스킬 팩입니다.
+Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물을 남기면서 계속 익힐 수 있도록 만든 온보딩 스킬 팩입니다.
 
 만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
 
@@ -12,7 +12,7 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 이 팩은 세 개의 스킬로 시작합니다.
 
 - `$codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
-- `$codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명합니다.
+- `$codex-core-coach`: Codex 기본기, 개발 용어, daily workflow 적용을 쉽게 설명하고 다음 학습 단계를 추천합니다.
 - `$codex-skill-builder`: 업무 흐름을 Codex Skill로 만들고, 테스트하고, 계속 개선합니다.
 
 이 학습 흐름은 한국어와 영어를 모두 지원합니다. 사용자가 한국어로 말하면 한국어로, 영어로 말하면 영어로 진행하며, `Skill`, `Plugin`, `MCP`, `Subagent`, `Hook`, `AGENTS.md` 같은 공식 제품 용어는 영어 표기를 함께 유지합니다.
@@ -111,7 +111,9 @@ $codex-start
 - Explain simply: Codex 용어나 개발 용어를 쉽게 설명받습니다.
 - Daily workflow: 실제 반복 업무 하나를 Codex workflow로 바꿉니다.
 - Skill builder: 재사용 가능한 Codex Skill을 만들거나 개선합니다.
-- Facilitator mode: 수업이나 워크샵 진행안으로 사용합니다.
+- Extend Codex: MCP, Plugin, Subagent, Hook, AGENTS.md가 필요한지 판단합니다.
+
+각 단계를 마치면 온보딩이 끝나는 대신, Codex가 추천 다음 단계 1개와 대안 2개를 제안합니다. `다음`이라고 답하면 추천 경로로 이어서 진행합니다.
 
 ## 무엇을 배우나
 

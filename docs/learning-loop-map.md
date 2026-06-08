@@ -24,6 +24,21 @@ Learners should be able to return to this pack whenever they need help using Cod
 - Keep every block to one small action.
 - End each Phase A with a direct practice instruction, then stop.
 - Ask the learner to reply "done", "next", "완료", or "다음" before continuing.
+- Treat Phase B as a continuation moment, not a closing moment.
+- After each completed step, recommend exactly one next step and offer two alternatives.
+- If the next step belongs to another skill, name the skill explicitly so the learner can invoke it.
 - For Korean learners, use the pattern: English term -> Korean meaning -> why it matters -> easy example.
 - For English learners, keep official English terms and give concrete examples.
 - Treat unfamiliar terms as teaching opportunities: define briefly, show a practical example, then return to the user's task.
+
+## Default Continuation Ladder
+
+Use this ladder when the learner says "next" without choosing:
+
+1. Understand the current Codex surface.
+2. Learn the extension map: Skill, Plugin, MCP, Subagent, Hook, AGENTS.md.
+3. Practice a safe Codex request with goal, constraints, and verification.
+4. Pick one recurring daily workflow.
+5. Turn that workflow into a Skill.
+6. Test the Skill on real work.
+7. Decide whether MCP, Plugin packaging, Subagents, Hooks, or AGENTS.md would improve it.
