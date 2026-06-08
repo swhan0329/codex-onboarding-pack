@@ -18,7 +18,15 @@ For daily work, start by finding repeated judgment and repeated output, not a gi
 
 ## EXECUTE
 
-Ask the learner to list three recurring tasks using this table:
+First, ask the learner which practice-lab task felt closest to their real work:
+
+- meeting/action-item summary
+- announcement or document editing
+- small bug fix and verification
+- CSV/report summary
+- skill idea drafting
+
+Then ask the learner to list three real recurring tasks using this table:
 
 | Task | Input source | Output | Frequency | Human review needed? | Best Codex surface |
 | --- | --- | --- | --- | --- | --- |

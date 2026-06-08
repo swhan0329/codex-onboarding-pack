@@ -16,7 +16,14 @@ A Skill is a reusable workflow instruction for Codex. A one-off instruction belo
 
 ## EXECUTE
 
-Ask the learner to choose one repeated task and answer:
+If the learner used the practice lab, ask which prompt felt reusable:
+
+- meeting notes -> action-item table
+- draft -> polished announcement
+- bug report -> minimal fix and verification
+- CSV -> status report
+
+Then ask the learner to choose one repeated task and answer:
 
 ```text
 Task:

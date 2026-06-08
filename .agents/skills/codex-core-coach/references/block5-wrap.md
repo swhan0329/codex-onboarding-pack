@@ -26,6 +26,11 @@ Create or help the learner draft this artifact:
 
 ## My daily workflow candidates
 
+## Practice lab result
+
+| Prompt tried | What Codex changed or produced | How I checked it |
+| --- | --- | --- |
+
 ## Verification habit
 ```
 
@@ -36,6 +41,7 @@ If writing files is appropriate, save it as `CODEX_WORKING_NOTES.md`. Otherwise,
 Good answer:
 
 - Includes one real workflow candidate.
+- Includes one practice-lab result.
 - Separates Skill, Plugin, MCP, Subagent, Hook, and AGENTS.md.
 - Includes a verification habit.
 

@@ -28,11 +28,16 @@ English:
 
 ## EXECUTE
 
-Ask the learner:
+Use the practice lab as the example. Ask the learner:
 
 Which surface are you using right now: Codex app, CLI, IDE extension, or web/cloud?
 
-Then ask them to name one task that surface is good for.
+Then map that surface to one practice-lab task:
+
+- read `inbox/meeting-notes.md`
+- edit `drafts/product-announcement.md`
+- fix `project/simple_app.js`
+- summarize `data/weekly-metrics.csv`
 
 ## CHECK
 

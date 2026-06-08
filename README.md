@@ -9,6 +9,8 @@ Created by **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.
 
 Links: [Portfolio](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
 
+This repo includes a `practice-lab-template/` folder with dummy files. Onboarding can copy it into `codex-practice-lab/` so learners can try summarizing meeting notes, editing a draft, fixing a tiny bug, and summarizing CSV data.
+
 This pack starts with three skills:
 
 - `codex-start`: the bilingual always-on entry point.
@@ -35,6 +37,7 @@ codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
 4. Start a new thread, type `$` in the prompt box, search for `codex-start`, and select it.
+5. Choose `Start here` to create `codex-practice-lab/` and run the first copy-paste prompt.
 
 In some Codex App versions, the same entry may appear as `Codex Start Coach`. Select that entry if you see it.
 
@@ -100,7 +103,7 @@ After installing the plugin, start a new thread, type `$`, and select `codex-sta
 
 Then choose what you need right now:
 
-- Start here: open Codex App and learn the basic flow.
+- Start here: create a dummy practice folder and copy/paste the first prompt.
 - Explain simply: ask for plain-language explanations of Codex or developer terms.
 - Daily workflow: turn a real recurring task into a Codex workflow.
 - Skill builder: create or improve a reusable skill.

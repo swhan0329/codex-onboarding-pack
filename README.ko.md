@@ -9,6 +9,8 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 링크: [포트폴리오](https://swhan0329.github.io/) · [LinkedIn](https://www.linkedin.com/in/swhan0329/) · [GitHub](https://github.com/swhan0329)
 
+이 repo에는 `practice-lab-template/` 더미 실습 폴더가 함께 들어 있습니다. 온보딩을 시작하면 Codex가 이 템플릿을 `codex-practice-lab/`로 복사해서, 사용자가 회의록 요약, 공지 초안 수정, 작은 버그 수정, CSV 요약을 직접 해볼 수 있게 합니다.
+
 이 팩은 세 개의 스킬로 시작합니다.
 
 - `codex-start`: 언제든 다시 부를 수 있는 온보딩 시작점입니다.
@@ -35,6 +37,7 @@ codex plugin add codex-onboarding-pack@codex-onboarding-pack
 ```
 
 4. 새 thread에서 입력창에 `$`를 입력하고 `codex-start`를 검색해 선택합니다.
+5. `Start here`를 고르면 Codex가 `codex-practice-lab/` 실습 폴더를 만들고 첫 copy-paste 프롬프트를 안내합니다.
 
 일부 Codex App 버전에서는 같은 시작점이 `Codex Start Coach`로 보일 수 있습니다. 그 항목을 선택해도 정상입니다.
 
@@ -100,7 +103,7 @@ Plugin 설치 후에는 새 thread에서 입력창에 `$`를 입력하고 `codex
 
 그다음 지금 필요한 흐름을 고릅니다.
 
-- Start here: Codex App에서 시작하고 기본 흐름을 익힙니다.
+- Start here: 더미 실습 폴더를 만들고 첫 프롬프트를 복사/붙여넣기합니다.
 - Explain simply: Codex 용어나 개발 용어를 쉽게 설명받습니다.
 - Daily workflow: 실제 반복 업무 하나를 Codex workflow로 바꿉니다.
 - Skill builder: 재사용 가능한 Codex Skill을 만들거나 개선합니다.
@@ -126,6 +129,7 @@ Plugin 설치 후에는 새 thread에서 입력창에 `$`를 입력하고 `codex
 학습자는 다음 중 하나 이상의 작업물을 남기게 됩니다.
 
 - `CODEX_WORKING_NOTES.md`
+- `codex-practice-lab/`
 - daily workflow 후보 목록
 - `.agents/skills/<workflow-name>/SKILL.md`
 - 본인 업무에 맞춘 Skill 초안

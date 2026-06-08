@@ -2,7 +2,7 @@
 
 이 문서는 Codex Onboarding Pack을 처음 쓰는 사람이 하나씩 따라 해볼 수 있도록 만든 한국어 가이드입니다.
 
-목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 Codex를 실제 업무에 적용할 수 있도록 작은 작업물 하나를 남기고, 다음 실습으로 계속 이어가는 것입니다.
+목표는 Codex 기능을 외우는 것이 아닙니다. 목표는 더미 실습 폴더를 실제로 읽고, 고치고, 확인하면서 Codex가 어떤 식으로 일하는지 몸으로 느끼는 것입니다.
 
 만든 사람: **Codex Ambassador [한서우 / Seowoo Han](https://swhan0329.github.io/)**
 
@@ -60,7 +60,7 @@ codex plugin list --marketplace codex-onboarding-pack
 
 ```text
 PLUGIN                                       STATUS              VERSION  PATH
-codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.3    ...
+codex-onboarding-pack@codex-onboarding-pack  installed, enabled  0.1.4    ...
 ```
 
 나중에 최신 버전으로 업데이트하려면 아래처럼 실행합니다.
@@ -97,6 +97,19 @@ codex-skill-builder
 ```text
 Start here로 시작할게.
 ```
+
+그러면 Codex가 현재 작업 폴더에 `codex-practice-lab/`를 만들고, 아래 같은 더미 파일로 실습을 시작합니다.
+
+```text
+codex-practice-lab/
+  inbox/meeting-notes.md
+  drafts/product-announcement.md
+  project/simple_app.js
+  data/weekly-metrics.csv
+  prompts/01-first-task.ko.md
+```
+
+첫 단계는 `prompts/01-first-task.ko.md` 내용을 복사해서 Codex에 붙여넣는 것입니다.
 
 ## 3. Repo-local fallback
 
@@ -168,6 +181,7 @@ MCP가 뭔지 개발자가 아닌 사람도 이해할 수 있게 설명해줘.
 
 - 채팅 안에 정리된 `Codex Working Notes`
 - 파일로 저장된 `CODEX_WORKING_NOTES.md`
+- 직접 만져본 `codex-practice-lab/` 실습 결과
 
 ## 5. 반복 업무를 Skill로 만들거나 개선하기
 

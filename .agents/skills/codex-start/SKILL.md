@@ -5,7 +5,7 @@ description: Start or resume bilingual Codex onboarding as an ongoing learning c
 
 # Codex Start
 
-This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It chooses the best next step, sets the response language, routes the learner to the right coach, and keeps the learning loop open after each completed step.
+This skill is the always-available entry point for the Codex onboarding pack. It should not teach every detail itself. It creates or opens the hands-on practice lab, chooses the best next step, sets the response language, routes the learner to the right coach, and keeps the learning loop open after each completed step.
 
 ## Attribution
 
@@ -31,14 +31,35 @@ On invocation:
 
 1. Read `references/current-need-map.md`.
 2. Read `references/official-codex-map.md` only when the user asks what Codex features mean or asks for official sources.
-3. Explain that the goal is to make Codex useful in the learner's actual work, not finish a one-time course.
-4. Offer the current-need menu.
-5. Ask the user what they want to do now.
-6. Stop after the question unless the user already gave a clear current need.
+3. If the user is new, says Start here, or has no concrete files to work on, create or open the included practice lab before explaining concepts.
+4. Explain that the goal is to feel Codex working on files, not finish a one-time course.
+5. Offer the current-need menu.
+6. Ask the user what they want to do now.
+7. Stop after the question unless the user already gave a clear current need.
+
+## Practice Lab Bootstrap
+
+The pack includes a hands-on template named `practice-lab-template`. Use it before abstract teaching.
+
+When the learner is starting from a blank workspace:
+
+1. Check whether `codex-practice-lab/` already exists in the current workspace.
+2. If it does not exist and file writing is allowed, create it by copying the included `practice-lab-template/`.
+3. Prefer the helper script when available:
+   - installed plugin path: `../../scripts/create-practice-lab.sh` relative to this skill folder
+   - repo-local path: `../../../scripts/create-practice-lab.sh` relative to this skill folder
+4. If the script is not available, copy the template manually from one of these locations:
+   - installed plugin path: `../../practice-lab-template/`
+   - repo-local path: `../../../practice-lab-template/`
+5. After creating or finding the lab, ask the learner to open `codex-practice-lab/prompts/01-first-task.ko.md` or `codex-practice-lab/prompts/01-first-task.en.md` and copy/paste the prompt.
+6. Stop so the learner can run the first practice prompt.
+
+If writing files is not appropriate, show the first prompt from the template in chat and say the user can clone the repo to get the full lab files.
 
 When the user chooses:
 
-- Start from basics, feature map, or developer-term explanation -> invoke or route to `codex-core-coach`.
+- Start here or start from basics -> create/open `codex-practice-lab/`, then route to `codex-core-coach` Module 0.
+- Feature map or developer-term explanation -> invoke or route to `codex-core-coach`.
 - Daily workflow -> route to `codex-core-coach` module 4, then offer `codex-skill-builder` if the workflow should become reusable.
 - Build or improve a skill -> route to `codex-skill-builder`.
 - MCP, Plugin, Subagent, Hook, or AGENTS.md questions -> route to `codex-core-coach` module 2 first, then offer `codex-skill-builder` block 5 if the learner wants to package or connect a workflow.
@@ -77,7 +98,7 @@ Use this menu, translated into the active language:
 
 | Need | Best for | Next |
 | --- | --- | --- |
-| Start here | New users opening Codex App or a repo for the first time. | `codex-core-coach` |
+| Start here | New users who want a safe folder and copy-paste prompts. | `codex-practice-lab/`, then `codex-core-coach` |
 | Explain simply | Users blocked by Codex or developer terms. | `codex-core-coach` |
 | Daily workflow | People who want to apply Codex to recurring work. | `codex-core-coach`, then possibly `codex-skill-builder` |
 | Skill builder | People ready to create or improve a reusable skill. | `codex-skill-builder` |

@@ -5,7 +5,7 @@ description: Ongoing Codex learning coach. Use when a user wants to understand C
 
 # Codex Core Coach
 
-Teach Codex as an ongoing coach, not a one-time lesson. Help the learner understand the current concept, try one small action, and keep useful notes they can return to later.
+Teach Codex as an ongoing coach, not a one-time lesson. Start with the included practice lab whenever possible so the learner can watch Codex read files, edit files, run a check, and keep useful notes they can return to later.
 
 ## Language Policy
 
@@ -54,7 +54,7 @@ Do not close the conversation after a completed module. The learner should alway
 
 | Module | File | Outcome |
 | --- | --- | --- |
-| 0 | `references/block0-orientation.md` | Choose the learner's current goal and working artifact. |
+| 0 | `references/block0-orientation.md` | Create or open the practice lab and run the first copy-paste prompt. |
 | 1 | `references/block1-surfaces.md` | Know when to use Codex App, CLI, IDE, web/cloud, browser, and computer use. |
 | 2 | `references/block2-extension-map.md` | Understand Skills, Plugins, MCP, Subagents, Hooks, and AGENTS.md. |
 | 3 | `references/block3-safe-workflow.md` | Learn how to give Codex a good task and verify results. |
@@ -69,7 +69,7 @@ Use these routes after each completion:
 
 | If the learner just finished | Recommended continuation |
 | --- | --- |
-| Module 0 orientation | Module 1 surfaces, unless they already chose a daily workflow. |
+| Module 0 orientation | Module 1 surfaces after the first practice prompt is complete. |
 | Module 1 surfaces | Module 2 extension map. |
 | Module 2 extension map | Module 3 safe workflow, or `codex-skill-builder` if they named a repeated workflow. |
 | Module 3 safe workflow | Module 4 daily work. |

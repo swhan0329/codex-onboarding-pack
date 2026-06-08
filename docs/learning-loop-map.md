@@ -8,8 +8,8 @@ Learners should be able to return to this pack whenever they need help using Cod
 
 | Skill | Purpose | Output |
 | --- | --- | --- |
-| `codex-start` | Route the learner to the right current need and keep language consistent. | Selected next step and skill invocation. |
-| `codex-core-coach` | Explain Codex basics, developer terms, surfaces, and safe workflows through small actions. | `CODEX_WORKING_NOTES.md` or a paste-ready equivalent. |
+| `codex-start` | Create/open the practice lab, route the learner to the right current need, and keep language consistent. | `codex-practice-lab/` plus selected next step. |
+| `codex-core-coach` | Explain Codex basics, developer terms, surfaces, and safe workflows through practice-lab actions. | Practice result plus `CODEX_WORKING_NOTES.md` or a paste-ready equivalent. |
 | `codex-skill-builder` | Teach skill authoring and improvement by turning real workflows into reusable skills. | `.agents/skills/<workflow-name>/SKILL.md` draft or improvement plan. |
 
 ## Suggested Expansion
@@ -21,6 +21,7 @@ Learners should be able to return to this pack whenever they need help using Cod
 ## Design Rules
 
 - Teach by doing, not by listing product features.
+- Start from included dummy files before asking learners to invent a real workflow.
 - Keep every block to one small action.
 - End each Phase A with a direct practice instruction, then stop.
 - Ask the learner to reply "done", "next", "완료", or "다음" before continuing.
@@ -35,10 +36,12 @@ Learners should be able to return to this pack whenever they need help using Cod
 
 Use this ladder when the learner says "next" without choosing:
 
-1. Understand the current Codex surface.
-2. Learn the extension map: Skill, Plugin, MCP, Subagent, Hook, AGENTS.md.
-3. Practice a safe Codex request with goal, constraints, and verification.
-4. Pick one recurring daily workflow.
-5. Turn that workflow into a Skill.
-6. Test the Skill on real work.
-7. Decide whether MCP, Plugin packaging, Subagents, Hooks, or AGENTS.md would improve it.
+1. Create or open `codex-practice-lab/`.
+2. Copy/paste the first prompt and inspect the result.
+3. Understand the current Codex surface.
+4. Learn the extension map: Skill, Plugin, MCP, Subagent, Hook, AGENTS.md.
+5. Practice a safe Codex request with goal, constraints, and verification.
+6. Pick one recurring daily workflow.
+7. Turn that workflow into a Skill.
+8. Test the Skill on real work.
+9. Decide whether MCP, Plugin packaging, Subagents, Hooks, or AGENTS.md would improve it.

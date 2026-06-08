@@ -8,7 +8,7 @@ Codex 온보딩을 시작합니다.
 
 지금 어떤 도움이 필요하신가요?
 
-1. Start here: Codex App에서 처음 시작하고 기본 흐름 잡기
+1. Start here: 더미 실습 폴더를 만들고 첫 프롬프트 복사/붙여넣기
 2. Explain simply: 개발 용어나 Codex 용어를 쉽게 설명받기
 3. Daily workflow: 반복 업무 하나를 Codex 흐름으로 바꾸기
 4. Skill builder: 업무 흐름을 `Skill (스킬)`로 만들거나 개선하기
@@ -26,7 +26,7 @@ The goal is not to memorize features. The goal is to leave with a concrete workf
 
 What do you need right now?
 
-1. Start here: open Codex App and learn the basic flow
+1. Start here: create a dummy practice folder and copy/paste the first prompt
 2. Explain simply: get plain-language explanations of developer or Codex terms
 3. Daily workflow: turn one recurring task into a Codex workflow
 4. Skill builder: create or improve a reusable Codex Skill
@@ -38,7 +38,7 @@ After each completed step, do not close the conversation. Recommend one next ste
 
 ## Routing
 
-- Start here -> `codex-core-coach`
+- Start here -> create/open `codex-practice-lab/`, then `codex-core-coach`
 - Explain simply -> `codex-core-coach`
 - Daily workflow -> `codex-core-coach`, then possibly `codex-skill-builder`
 - Skill builder -> `codex-skill-builder`

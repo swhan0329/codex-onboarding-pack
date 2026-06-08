@@ -17,7 +17,7 @@ A strong Codex request makes three things explicit: goal, constraints, and verif
 
 ## EXECUTE
 
-Ask the learner to rewrite one vague request into this format:
+Ask the learner to rewrite one vague request using a practice-lab file:
 
 ```text
 Goal:
@@ -25,6 +25,16 @@ Context:
 Constraints:
 Verification:
 Do not:
+```
+
+Example:
+
+```text
+Goal: Fix the score boundary bug.
+Context: Read codex-practice-lab/project/bug-report.md and project/simple_app.js.
+Constraints: Make the smallest code change.
+Verification: Run node project/simple_app.js.
+Do not: Rewrite unrelated files.
 ```
 
 ## CHECK

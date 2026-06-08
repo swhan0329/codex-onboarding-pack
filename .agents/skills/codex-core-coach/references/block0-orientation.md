@@ -1,4 +1,4 @@
-# Block 0: Orientation
+# Block 0: Practice Lab Orientation
 
 Official references:
 
@@ -9,26 +9,29 @@ Official references:
 
 Korean:
 
-Codex는 기능을 외우는 도구라기보다, 작업을 끝까지 맡겨보고 검증하는 동료에 가깝습니다. 좋은 온보딩은 "Codex가 뭘 할 수 있나?"에서 멈추지 않고 "내 업무 중 어떤 반복 흐름을 Codex와 함께 끝낼 수 있나?"로 넘어가야 합니다.
+Codex는 설명만 듣는 것보다, 작은 폴더를 실제로 읽고 고치고 확인해볼 때 훨씬 빨리 이해됩니다. 이 온보딩은 먼저 더미 실습 폴더를 만들고, 회의록 요약, 초안 수정, 작은 버그 수정, 데이터 요약을 직접 해보게 합니다.
 
 English:
 
-Codex is best learned as a teammate with clear context and a definition of done. Good onboarding should move from "what can Codex do?" to "which real recurring workflow can I complete with Codex?"
+Codex is easier to understand when the learner can watch it read files, edit a small draft, fix a tiny bug, and verify the result. This onboarding should start with the included practice lab before moving into concepts.
 
 ## EXECUTE
 
-Ask the learner to choose one artifact:
+Create or open the practice lab:
 
-1. A Codex feature map
-2. A daily-workflow candidate list
-3. A first skill idea
+1. If `codex-practice-lab/` does not exist, copy it from the included `practice-lab-template/`.
+2. Ask the learner to open one prompt file:
+   - Korean: `codex-practice-lab/prompts/01-first-task.ko.md`
+   - English: `codex-practice-lab/prompts/01-first-task.en.md`
+3. Tell the learner to copy/paste that prompt into Codex.
+4. Stop and wait for `완료`, `다음`, `done`, or `next`.
 
-Then ask them to keep one real folder or project open while learning.
+If the practice lab already exists, ask the learner to reuse it and continue with the next prompt in `codex-practice-lab/prompts/`.
 
 ## CHECK
 
 Good answer:
 
-- Names a real work area or project.
-- Chooses a small artifact.
-- Does not start with a huge automation goal.
+- Creates or finds `codex-practice-lab/`.
+- Runs the first prompt against real dummy files.
+- Keeps the first result small enough to inspect.
