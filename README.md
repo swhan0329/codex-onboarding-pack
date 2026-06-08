@@ -19,51 +19,39 @@ The learning flow supports Korean and English. Codex should answer in the user's
 
 ## Start with Codex App (recommended)
 
-1. Clone this repository or download it as a local folder.
-2. Open the Codex App and sign in.
-3. Open the `codex-onboarding-pack` folder as a project/workspace.
-4. Start a new thread inside that project.
-5. Ask:
+1. Open the Codex App and sign in.
+2. Paste this into a new thread:
+
+```text
+Add and install this Codex plugin from GitHub:
+https://github.com/swhan0329/codex-onboarding-pack
+```
+
+3. If Codex asks for the marketplace command, use:
+
+```bash
+codex plugin marketplace add swhan0329/codex-onboarding-pack
+```
+
+4. Open `/plugins`, install **Codex Onboarding Pack**, start a new thread, and ask:
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+You can also invoke the start skill directly after install:
 
 ```text
 $codex-start
 ```
-
-Codex should detect the repo-local skills under `.agents/skills` and begin the onboarding flow.
 
 ## Install
 
-### Repo-local use in Codex App
-
-Clone this repository, then open the folder in Codex App:
-
-```bash
-git clone https://github.com/swhan0329/codex-onboarding-pack.git
-```
-
-In Codex App, open the cloned `codex-onboarding-pack` folder, start a new thread, and ask:
-
-```text
-$codex-start
-```
-
-### Repo-local use in Codex CLI
-
-If you prefer the terminal, run Codex from the repo root:
-
-```bash
-codex
-```
-
-Then ask:
-
-```text
-$codex-start
-```
-
 ### Plugin marketplace use
 
-The repository also includes a minimal plugin manifest and marketplace entry. After the repo is available to your GitHub account, you can add it as a Codex marketplace source:
+Use this when you want the onboarding skills available without opening this repository as your active project.
+
+Add the GitHub repo as a marketplace source:
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
@@ -73,6 +61,22 @@ Then open Codex, use `/plugins`, install **Codex Onboarding Pack**, start a new 
 
 ```text
 @codex-onboarding-pack start onboarding
+```
+
+### Repo-local fallback
+
+Use this only when you want to inspect, edit, or test the skill files locally.
+
+```bash
+git clone https://github.com/swhan0329/codex-onboarding-pack.git
+cd codex-onboarding-pack
+codex
+```
+
+Then ask:
+
+```text
+$codex-start
 ```
 
 ### User-wide use
@@ -87,7 +91,13 @@ Restart Codex if the skills do not appear immediately.
 
 ## First Run
 
-Start with:
+After installing the plugin, start with:
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+Or invoke the start skill directly:
 
 ```text
 $codex-start

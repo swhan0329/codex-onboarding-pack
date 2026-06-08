@@ -19,51 +19,39 @@ Codex를 처음 배우는 사람이 기능을 외우는 대신, 실제 작업물
 
 ## Codex App으로 시작하기 (추천)
 
-1. 이 저장소를 clone하거나 local folder로 다운로드합니다.
-2. Codex App을 열고 로그인합니다.
-3. `codex-onboarding-pack` 폴더를 프로젝트/workspace로 엽니다.
-4. 그 프로젝트 안에서 새 thread를 시작합니다.
-5. 아래처럼 요청합니다.
+1. Codex App을 열고 로그인합니다.
+2. 새 thread에 아래처럼 붙여넣습니다.
+
+```text
+이 GitHub repo를 Codex plugin으로 추가하고 설치해줘:
+https://github.com/swhan0329/codex-onboarding-pack
+```
+
+3. Codex가 marketplace 추가 명령을 요청하면 아래 명령을 사용합니다.
+
+```bash
+codex plugin marketplace add swhan0329/codex-onboarding-pack
+```
+
+4. Codex에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치한 뒤 새 thread에서 시작합니다.
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+설치 후 시작 스킬을 직접 호출해도 됩니다.
 
 ```text
 $codex-start
 ```
-
-Codex가 `.agents/skills` 아래의 repo-local skill을 찾으면 온보딩 흐름이 시작됩니다.
 
 ## 설치
 
-### Codex App에서 repo-local 사용
-
-이 저장소를 clone한 뒤 Codex App에서 폴더를 엽니다.
-
-```bash
-git clone https://github.com/swhan0329/codex-onboarding-pack.git
-```
-
-Codex App에서 clone된 `codex-onboarding-pack` 폴더를 열고, 새 thread에서 이렇게 요청합니다.
-
-```text
-$codex-start
-```
-
-### Codex CLI에서 repo-local 사용
-
-터미널을 선호한다면 repo root에서 Codex CLI를 실행합니다.
-
-```bash
-codex
-```
-
-그다음 이렇게 요청합니다.
-
-```text
-$codex-start
-```
-
 ### Plugin marketplace 사용
 
-이 저장소에는 최소 plugin manifest와 marketplace entry도 포함되어 있습니다. GitHub에서 이 public repo를 clone할 수 있다면, Codex marketplace source로 추가할 수 있습니다.
+이 저장소를 현재 프로젝트로 열지 않고도 온보딩 스킬을 쓰고 싶을 때 사용합니다.
+
+GitHub repo를 marketplace source로 추가합니다.
 
 ```bash
 codex plugin marketplace add swhan0329/codex-onboarding-pack
@@ -73,6 +61,22 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 
 ```text
 @codex-onboarding-pack start onboarding
+```
+
+### Repo-local fallback
+
+스킬 파일을 직접 확인하거나 수정하거나 테스트하고 싶을 때만 사용합니다.
+
+```bash
+git clone https://github.com/swhan0329/codex-onboarding-pack.git
+cd codex-onboarding-pack
+codex
+```
+
+그다음 이렇게 요청합니다.
+
+```text
+$codex-start
 ```
 
 ### 사용자 전체 설치
@@ -87,7 +91,13 @@ codex plugin marketplace add swhan0329/codex-onboarding-pack
 
 ## 첫 실행
 
-처음에는 이렇게 시작합니다.
+Plugin 설치 후에는 이렇게 시작합니다.
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+또는 시작 스킬을 직접 호출합니다.
 
 ```text
 $codex-start

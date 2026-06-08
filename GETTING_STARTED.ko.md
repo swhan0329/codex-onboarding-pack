@@ -13,15 +13,15 @@
 먼저 아래가 준비되어 있는지 확인합니다.
 
 - Codex App이 설치되어 있고 로그인할 수 있어야 합니다.
-- GitHub에서 이 저장소를 clone하거나 다운로드할 수 있어야 합니다.
-- 터미널에서 `git` 명령을 사용할 수 있으면 좋지만, 필수는 아닙니다.
+- 아래 GitHub URL에 접근할 수 있어야 합니다.
+- 터미널에서 `codex` 명령을 사용할 수 있으면 좋지만, 필수는 아닙니다.
 
 Codex CLI는 선택 사항입니다. 이 가이드는 먼저 Codex App으로 시작합니다.
 
-터미널을 사용할 수 있다면 아래를 확인합니다.
+GitHub URL:
 
-```bash
-git --version
+```text
+https://github.com/swhan0329/codex-onboarding-pack
 ```
 
 Codex CLI도 함께 쓰고 싶다면 아래를 확인합니다.
@@ -30,76 +30,48 @@ Codex CLI도 함께 쓰고 싶다면 아래를 확인합니다.
 codex --version
 ```
 
-`codex --version`이 동작하지 않아도 괜찮습니다. Codex App에서 프로젝트 폴더를 열어 진행할 수 있습니다.
+`codex --version`이 동작하지 않아도 괜찮습니다. Codex App에서 먼저 아래 요청을 해보세요.
 
-## 1. 저장소를 내 컴퓨터로 가져오기
+## 1. Codex App에서 GitHub URL로 설치하기 (추천)
 
-Codex App으로 시작하더라도 먼저 이 저장소가 내 컴퓨터의 local folder로 있어야 합니다.
-
-터미널이 편하다면 원하는 작업 폴더로 이동한 뒤 저장소를 clone합니다.
-
-```bash
-git clone https://github.com/swhan0329/codex-onboarding-pack.git
-cd codex-onboarding-pack
-```
-
-터미널이 익숙하지 않다면 GitHub 페이지에서 **Code** 버튼을 누른 뒤 **Download ZIP**으로 받아도 됩니다. 압축을 풀면 `codex-onboarding-pack` 폴더가 생깁니다.
-
-가능하다면 폴더 안에 스킬이 있는지 확인합니다.
-
-```bash
-find .agents/skills -maxdepth 2 -name SKILL.md -print
-```
-
-아래 세 개가 보이면 정상입니다.
+새 thread에 아래처럼 붙여넣습니다.
 
 ```text
-.agents/skills/codex-start/SKILL.md
-.agents/skills/codex-core-coach/SKILL.md
-.agents/skills/codex-skill-builder/SKILL.md
+이 GitHub repo를 Codex plugin으로 추가하고 설치해줘:
+https://github.com/swhan0329/codex-onboarding-pack
 ```
 
-Finder나 파일 탐색기로 확인한다면 아래 파일들이 있는지만 보면 됩니다.
+Codex가 직접 진행할 수 있으면 안내에 따라 설치합니다.
+
+만약 marketplace source를 추가하라는 명령을 알려주거나 터미널 실행이 필요하다고 하면 아래 명령을 사용합니다.
+
+```bash
+codex plugin marketplace add swhan0329/codex-onboarding-pack
+```
+
+그다음 Codex App에서 `/plugins`를 열고 **Codex Onboarding Pack**을 설치합니다.
+
+설치 후 새 thread에서 이렇게 시작합니다.
 
 ```text
-codex-onboarding-pack/
-  .agents/
-    skills/
-      codex-start/
-        SKILL.md
-      codex-core-coach/
-        SKILL.md
-      codex-skill-builder/
-        SKILL.md
+@codex-onboarding-pack start onboarding
 ```
 
-## 2. Codex App에서 repo 열기 (추천)
-
-먼저 Codex App으로 시작합니다.
-
-1. Codex App을 엽니다.
-2. ChatGPT 계정으로 로그인합니다.
-3. 새 project 또는 folder 열기 흐름에서 `codex-onboarding-pack` 폴더를 선택합니다.
-4. 프로젝트가 열리면 새 thread를 시작합니다.
-5. thread가 이 저장소 root를 보고 있는지 확인합니다.
-
-중요한 점은 Codex App이 `codex-onboarding-pack` 폴더 전체를 프로젝트로 보고 있어야 한다는 것입니다. 그래야 `.agents/skills` 안의 스킬을 찾을 수 있습니다.
-
-## 3. 첫 스킬 호출
-
-새 thread에서 아래처럼 입력합니다.
+또는 시작 스킬을 직접 호출합니다.
 
 ```text
 $codex-start
 ```
 
-또는 자연어로 이렇게 요청해도 됩니다.
+## 2. 설치 후 보이는 스킬
 
 ```text
-Codex 온보딩 시작해줘.
+$codex-start
+$codex-core-coach
+$codex-skill-builder
 ```
 
-정상이라면 Codex가 다음 중 어떤 방식으로 시작할지 물어봅니다.
+정상이라면 Codex가 다음 중 어떤 도움이 필요한지 물어봅니다.
 
 - Start here
 - Explain simply
@@ -113,18 +85,34 @@ Codex 온보딩 시작해줘.
 Start here로 시작할게.
 ```
 
-## 3-1. Codex CLI로 여는 방법 (선택)
+## 3. Repo-local fallback
 
-터미널에서 진행하고 싶다면 저장소 root에서 실행합니다.
+스킬 파일을 직접 확인하거나 수정하거나 테스트하고 싶을 때만 이 경로를 사용합니다.
 
 ```bash
+git clone https://github.com/swhan0329/codex-onboarding-pack.git
+cd codex-onboarding-pack
 codex
 ```
 
-Codex CLI가 열리면 같은 방식으로 시작합니다.
+Codex가 열리면 이렇게 시작합니다.
 
 ```text
 $codex-start
+```
+
+repo-local skill 파일이 보이는지 확인하려면:
+
+```bash
+find .agents/skills -maxdepth 2 -name SKILL.md -print
+```
+
+아래 세 개가 보이면 정상입니다.
+
+```text
+.agents/skills/codex-start/SKILL.md
+.agents/skills/codex-core-coach/SKILL.md
+.agents/skills/codex-skill-builder/SKILL.md
 ```
 
 ## 4. 기본기와 용어를 쉽게 배우기
@@ -252,13 +240,20 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 
 ### 스킬이 안 보여요
 
-1. Codex App에서 `codex-onboarding-pack` 폴더를 프로젝트로 열었는지 확인합니다.
-2. `.agents/skills` 아래에 `SKILL.md` 파일들이 있는지 확인합니다.
-3. Codex를 재시작합니다.
+1. Codex App에서 `/plugins`를 열고 **Codex Onboarding Pack**이 설치되어 있는지 확인합니다.
+2. 설치되어 있다면 새 thread를 시작합니다.
+3. `@codex-onboarding-pack start onboarding`으로 먼저 호출해봅니다.
+4. 그래도 안 보이면 Codex를 재시작합니다.
 
 ### `$codex-start`가 안 먹어요
 
-아래처럼 자연어로 요청합니다.
+먼저 plugin 이름으로 호출합니다.
+
+```text
+@codex-onboarding-pack start onboarding
+```
+
+repo-local fallback으로 쓰는 중이라면 아래처럼 자연어로 요청합니다.
 
 ```text
 이 repo의 .agents/skills/codex-start/SKILL.md를 사용해서 온보딩을 시작해줘.
@@ -278,11 +273,11 @@ codex mcp add context7 -- npx -y @upstash/context7-mcp
 
 처음이라면 이 순서로 진행하세요.
 
-1. 저장소 clone 또는 Download ZIP
-2. Codex App 실행
-3. Codex App에서 `codex-onboarding-pack` 폴더 열기
-4. `$codex-start`
-5. `Start here` 선택
+1. Codex App 실행
+2. GitHub URL을 주고 plugin 추가/설치 요청
+3. 필요하면 `codex plugin marketplace add swhan0329/codex-onboarding-pack` 실행
+4. `/plugins`에서 **Codex Onboarding Pack** 설치
+5. `@codex-onboarding-pack start onboarding`
 6. 모르는 용어나 기본 개념은 `$codex-core-coach`로 질문하기
 7. daily 업무 후보 하나 고르기
 8. 재사용하고 싶은 흐름은 `$codex-skill-builder`로 Skill 초안 만들기
